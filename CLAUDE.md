@@ -26,3 +26,12 @@ Working through the [Anthropic Academy](https://academy.anthropic.com/) course "
 - Model: `claude-sonnet-4-6`
 - API key in `.env` (do not commit)
 - Each file is self-contained — run with `python3 <file>.py`
+
+## Workflow
+
+After completing each lesson:
+1. Ask the user whether to commit and push now or wait
+2. Only commit and push after explicit confirmation
+3. This lets the user verify the code works before it goes to GitHub
+
+Repo: https://github.com/Halvanhelv/anthropic-academy
