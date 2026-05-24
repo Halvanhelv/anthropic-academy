@@ -4,7 +4,7 @@ load_dotenv()
 from anthropic import Anthropic
 
 client = Anthropic()
-model = "claude-sonnet-4-6"
+model = "claude-sonnet-4-0"
 
 messages = [{"role": "user", "content": "Write a 1 sentence description of a fake database"}]
 

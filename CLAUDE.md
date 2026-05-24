@@ -23,7 +23,7 @@ Working through the [Anthropic Academy](https://academy.anthropic.com/) course "
 
 ## Conventions
 
-- Model: `claude-sonnet-4-6`
+- Model: `claude-sonnet-4-0` (supports prefill, matches course examples)
 - API key in `.env` (do not commit)
 - Each file is self-contained — run with `python3 <file>.py`
 
