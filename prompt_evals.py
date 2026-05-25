@@ -57,10 +57,45 @@ Please generate 3 objects.
     return json.loads(text)
 
 
+# --- Step 1: Generate dataset ---
 dataset = generate_dataset()
-print(json.dumps(dataset, indent=2))
-
 with open("dataset.json", "w") as f:
     json.dump(dataset, f, indent=2)
+print("Dataset generated and saved.\n")
 
-print("\nDataset saved to dataset.json")
+
+# --- Step 2: Eval pipeline ---
+def run_prompt(test_case):
+    prompt = f"""
+Please solve the following task:
+
+{test_case["task"]}
+"""
+    messages = []
+    add_user_message(messages, prompt)
+    return chat(messages)
+
+
+def run_test_case(test_case):
+    output = run_prompt(test_case)
+    score = 10  # TODO: replace with real grading
+    return {
+        "output": output,
+        "test_case": test_case,
+        "score": score,
+    }
+
+
+def run_eval(dataset):
+    results = []
+    for test_case in dataset:
+        result = run_test_case(test_case)
+        results.append(result)
+    return results
+
+
+with open("dataset.json", "r") as f:
+    dataset = json.load(f)
+
+results = run_eval(dataset)
+print(json.dumps(results, indent=2))
