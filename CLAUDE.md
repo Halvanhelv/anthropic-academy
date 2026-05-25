@@ -11,19 +11,24 @@ Working through the [Anthropic Academy](https://academy.anthropic.com/) course "
 
 ## File structure
 
-| File | Lesson |
-|------|--------|
-| `making_a_request.py` | First API request |
-| `multi_turn.py` | Multi-turn conversations (message history) |
-| `chatbot.py` | Interactive chat loop |
-| `system_prompts.py` | System prompts (math tutor) |
-| `system_prompts_exercise.py` | Comparing responses with/without system prompt |
-| `temperature.py` | Temperature effect on creativity |
-| `streaming.py` | Response streaming |
+Each lesson has both `.py` (run standalone) and `.ipynb` (interactive in VS Code) versions.
+
+| # | File | Lesson |
+|---|------|--------|
+| 01 | `making_a_request` | First API request |
+| 02 | `multi_turn` | Multi-turn conversations (message history) |
+| 03 | `chatbot` | Interactive chat loop |
+| 04 | `system_prompts` | System prompts (math tutor) |
+| 05 | `system_prompts_exercise` | Comparing responses with/without system prompt |
+| 06 | `temperature` | Temperature effect on creativity |
+| 07 | `streaming` | Response streaming |
+| 08 | `structured_data` | Structured data with prefill + stop sequence |
+| 09 | `structured_data_exercise` | Prefill progression — clean commands |
+| 10 | `prompt_evals` | Eval pipeline with model-based grading |
 
 ## Conventions
 
-- Model: `claude-sonnet-4-0` (supports prefill, matches course examples)
+- Model: `claude-sonnet-4-0`
 - API key in `.env` (do not commit)
 - Each file is self-contained — run with `python3 <file>.py`
 

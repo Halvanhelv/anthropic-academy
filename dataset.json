@@ -1,11 +1,11 @@
 [
   {
-    "task": "Create a Python function that takes an S3 bucket ARN and extracts just the bucket name from it. The function should handle ARNs in the format 'arn:aws:s3:::bucket-name' and return only the bucket name portion."
+    "task": "Write a Python function that takes an AWS S3 bucket ARN as input and extracts just the bucket name from it. For example, given 'arn:aws:s3:::my-example-bucket' it should return 'my-example-bucket'."
   },
   {
-    "task": "Generate a JSON object for an AWS IAM policy that allows read-only access to a specific S3 bucket named 'company-logs'. The policy should only permit ListBucket and GetObject actions on that bucket and its contents."
+    "task": "Create a JSON object that defines an AWS IAM policy allowing read-only access to all objects in a specific S3 bucket named 'company-reports'. The policy should include the necessary statements for both listing bucket contents and getting objects."
   },
   {
-    "task": "Write a regex pattern that validates AWS region names. The pattern should match valid regions like 'us-east-1', 'eu-west-2', 'ap-southeast-1' but reject invalid formats like 'us-east', 'invalid-region', or 'us_east_1'."
+    "task": "Write a regex pattern that validates AWS instance IDs. The pattern should match strings that start with 'i-' followed by either 8 hexadecimal characters (old format) or 17 hexadecimal characters (new format). Examples: 'i-1234567890abcdef0' or 'i-abcd1234'."
   }
 ]
