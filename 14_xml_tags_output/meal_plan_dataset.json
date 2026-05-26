@@ -1,0 +1,48 @@
+[
+  {
+    "prompt_inputs": {
+      "height": "190cm",
+      "weight": "95kg",
+      "goal": "gain muscle mass",
+      "restrictions": "lactose intolerant"
+    },
+    "solution_criteria": [
+      "Provides 3000+ calories total daily intake",
+      "Includes 150+ grams of protein from non-dairy sources",
+      "Uses dairy alternatives like plant-based milk or lactose-free options"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Test with a tall, heavy powerlifter (190cm, 95kg) aiming to gain muscle mass with lactose intolerance restrictions to verify the prompt generates high-calorie, protein-rich meals using dairy alternatives"
+  },
+  {
+    "prompt_inputs": {
+      "height": "160cm",
+      "weight": "50kg",
+      "goal": "weight loss while maintaining endurance performance",
+      "restrictions": "vegan diet only"
+    },
+    "solution_criteria": [
+      "Total daily calories between 1400-1600 to support weight loss for this body size",
+      "At least 55% of calories from complex carbohydrates for endurance energy needs",
+      "All meals and snacks contain only plant-based ingredients with no animal products"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Test with a petite endurance runner (160cm, 50kg) focused on weight loss with vegan dietary restrictions to ensure the prompt creates a calorie-controlled plant-based plan with adequate carbohydrates for sustained energy"
+  },
+  {
+    "prompt_inputs": {
+      "height": "175cm",
+      "weight": "70kg",
+      "goal": "performance maintenance",
+      "restrictions": "gluten-free"
+    },
+    "solution_criteria": [
+      "includes balanced macronutrients (protein 20-30%, carbs 45-65%, fats 20-35%)",
+      "excludes all wheat-based foods and gluten sources",
+      "provides 5-6 meals/snacks throughout the day",
+      "includes timing recommendations for pre/post training"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Test with a medium-build martial artist (175cm, 70kg) targeting performance maintenance with gluten-free restrictions to check if the prompt balances macronutrients appropriately while avoiding wheat-based foods"
+  }
+]

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><title>Prompt Evaluation Report</title>
+<style>
+body{font-family:Arial,sans-serif;padding:20px;color:#333}
+.stats{display:flex;gap:10px;margin-bottom:20px}
+.stat{background:#fff;border-radius:5px;padding:15px;box-shadow:0 2px 5px rgba(0,0,0,.1);flex:1}
+.stat-val{font-size:24px;font-weight:bold;margin-top:5px}
+table{width:100%;border-collapse:collapse;margin-top:20px}
+th{background:#4a4a4a;color:white;text-align:left;padding:12px}
+td{padding:10px;border-bottom:1px solid #ddd;vertical-align:top;width:20%}
+tr:nth-child(even){background:#f9f9f9}
+.output pre{background:#f5f5f5;border:1px solid #ddd;border-radius:4px;padding:10px;font-size:14px;white-space:pre-wrap;word-wrap:break-word}
+.score{font-weight:bold;padding:5px 10px;border-radius:3px}
+.score-high{background:#c8e6c9;color:#2e7d32}
+.score-medium{background:#fff9c4;color:#f57f17}
+.score-low{background:#ffcdd2;color:#c62828}
+</style></head><body>
+<h1>Prompt Evaluation Report</h1>
+<div class="stats">
+<div class="stat"><div>Total Test Cases</div><div class="stat-val">3</div></div>
+<div class="stat"><div>Average Score</div><div class="stat-val">5.7 / 10</div></div>
+<div class="stat"><div>Pass Rate (≥7)</div><div class="stat-val">66.7%</div></div>
+</div>
+<table><thead><tr><th>Scenario</th><th>Prompt Inputs</th><th>Solution Criteria</th><th>Output</th><th>Score</th><th>Reasoning</th></tr></thead>
+<tbody><tr>
+            <td>Test with a tall, heavy powerlifter (190cm, 95kg) aiming to gain muscle mass with lactose intolerance restrictions to verify the prompt generates high-calorie, protein-rich meals using dairy alternatives</td>
+            <td><strong>height:</strong> 190cm<br><strong>weight:</strong> 95kg<br><strong>goal:</strong> gain muscle mass<br><strong>restrictions:</strong> lactose intolerant</td>
+            <td>• Provides 3000+ calories total daily intake<br>• Includes 150+ grams of protein from non-dairy sources<br>• Uses dairy alternatives like plant-based milk or lactose-free options</td>
+            <td class="output"><pre># One-Day Meal Plan for Muscle Gain (Lactose-Free)
+
+**Athlete Profile:** 190cm, 95kg male athlete focused on muscle gain
+**Daily Targets:** 3,200 calories | 190g protein | 110g fat | 400g carbs
+
+---
+
+## **6:30 AM - Pre-Workout**
+- Banana: 120g
+- Black coffee: 240ml
+
+**Calories:** 110 | **Protein:** 1g | **Fat:** 0g | **Carbs:** 27g
+
+---
+
+## **8:30 AM - Post-Workout Breakfast**
+- Oatmeal: 80g (dry weight)
+- Almond butter: 30g
+- Blueberries: 100g
+- Egg whites: 150g (about 5 egg whites)
+- Whole eggs: 100g (2 medium eggs)
+
+**Calories:** 720 | **Protein:** 32g | **Fat:** 28g | **Carbs:** 68g
+
+---
+
+## **11:30 AM - Mid-Morning Snack**
+- Lactose-free protein powder: 30g
+- Coconut milk: 200ml
+- Peanut butter: 20g
+- Dates: 30g (2-3 dates)
+
+**Calories:** 425 | **Protein:** 25g | **Fat:** 18g | **Carbs:** 35g
+
+---
+
+## **2:00 PM - Lunch**
+- Chicken breast (grilled): 150g
+- Brown rice (cooked): 200g
+- Avocado: 100g
+- Mixed vegetables (broccoli, bell peppers): 150g
+- Olive oil: 15ml
+
+**Calories:** 780 | **Protein:** 48g | **Fat:** 28g | **Carbs:** 72g
+
+---
+
+## **5:00 PM - Pre-Dinner Snack**
+- Sweet potato (baked): 200g
+- Almonds: 25g
+- Turkey slices: 60g
+
+**Calories:** 435 | **Protein:** 25g | **Fat:** 16g | **Carbs:** 48g
+
+---
+
+## **8:00 PM - Dinner**
+- Salmon fillet: 150g
+- Quinoa (cooked): 150g
+- Asparagus: 150g
+- Olive oil: 10ml
+- Walnuts: 20g
+
+**Calories:** 730 | **Protein:** 44g | **Fat:** 35g | **Carbs:** 52g
+
+---
+
+## **Daily Totals**
+- **Total Calories:** 3,200
+- **Total Protein:** 175g (22%)
+- **Total Fat:** 125g (35%)
+- **Total Carbs:** 302g (38%)
+- **Fiber:** ~45g
+
+---
+
+## **Key Notes:**
+- All meals are lactose-free using alternatives like almond/coconut milk and lactose-free protein powder
+- Meal timing supports training performance and recovery
+- High-quality protein sources distributed throughout the day
+- Complex carbs timed around workout for optimal energy
+- Healthy fats from nuts, oils, and fish support hormone production
+- Estimated daily cost: $25-30 using common grocery store ingredients
+
+**Hydration:** Aim for 3-4 liters of water throughout the day, plus additional during training.</pre></td>
+            <td><span class="score score-medium">7</span></td>
+            <td>The solution successfully meets all mandatory requirements and criteria, providing a comprehensive meal plan with proper caloric intake, adequate protein from non-dairy sources, and appropriate lactose-free alternatives. However, there are significant mathematical discrepancies between the stated nutritional targets and actual calculated totals, which undermines the precision expected in athletic nutrition planning. Despite these calculation errors, the fundamental structure and content quality remain strong.</td>
+        </tr><tr>
+            <td>Test with a petite endurance runner (160cm, 50kg) focused on weight loss with vegan dietary restrictions to ensure the prompt creates a calorie-controlled plant-based plan with adequate carbohydrates for sustained energy</td>
+            <td><strong>height:</strong> 160cm<br><strong>weight:</strong> 50kg<br><strong>goal:</strong> weight loss while maintaining endurance performance<br><strong>restrictions:</strong> vegan diet only</td>
+            <td>• Total daily calories between 1400-1600 to support weight loss for this body size<br>• At least 55% of calories from complex carbohydrates for endurance energy needs<br>• All meals and snacks contain only plant-based ingredients with no animal products</td>
+            <td class="output"><pre># One-Day Vegan Meal Plan for Endurance Athlete
+
+**Athlete Profile:** 160cm, 50kg, Weight Loss + Endurance Performance
+**Daily Targets:** 1,600 calories | 80g protein | 60g fat | 200g carbohydrates
+
+---
+
+## **6:30 AM - PRE-WORKOUT**
+**Banana Energy Boost**
+- Banana, medium: 100g
+- Almond butter: 10g
+
+*Calories: 180 | Protein: 3g | Fat: 7g | Carbs: 30g*
+
+---
+
+## **8:00 AM - POST-WORKOUT BREAKFAST**
+**Power Smoothie Bowl**
+- Frozen mixed berries: 100g
+- Banana: 80g
+- Unsweetened soy milk: 200ml
+- Protein powder (pea/hemp): 25g
+- Ground flaxseed: 10g
+- Granola (oat-based): 30g
+
+*Calories: 420 | Protein: 28g | Fat: 12g | Carbs: 52g*
+
+---
+
+## **12:30 PM - LUNCH**
+**Quinoa Power Bowl**
+- Cooked quinoa: 100g
+- Black beans (cooked): 80g
+- Roasted sweet potato: 120g
+- Spinach (fresh): 50g
+- Avocado: 40g
+- Tahini dressing: 15g
+- Pumpkin seeds: 10g
+
+*Calories: 520 | Protein: 20g | Fat: 18g | Carbs: 68g*
+
+---
+
+## **3:30 PM - AFTERNOON SNACK**
+**Protein-Rich Hummus Plate**
+- Hummus: 40g
+- Whole grain pita: 30g
+- Cherry tomatoes: 100g
+- Cucumber slices: 80g
+
+*Calories: 210 | Protein: 9g | Fat: 8g | Carbs: 28g*
+
+---
+
+## **7:00 PM - DINNER**
+**Mediterranean Lentil Pasta**
+- Whole wheat pasta (dry weight): 60g
+- Cooked red lentils: 80g
+- Diced tomatoes: 150g
+- Nutritional yeast: 10g
+- Olive oil: 8g
+- Broccoli (steamed): 100g
+- Fresh basil: 5g
+
+*Calories: 470 | Protein: 20g | Fat: 12g | Carbs: 68g*
+
+---
+
+## **DAILY TOTALS:**
+- **Calories:** 1,600
+- **Protein:** 80g (20%)
+- **Fat:** 57g (32%)
+- **Carbohydrates:** 246g (48%)
+- **Fiber:** 45g
+
+## **KEY BENEFITS:**
+✅ **Weight Loss:** Moderate caloric deficit while maintaining adequate fuel
+✅ **Endurance Support:** Strategic carb timing around workouts
+✅ **Complete Proteins:** Quinoa, legumes, and plant protein powder
+✅ **Recovery:** Anti-inflammatory foods like berries and leafy greens
+✅ **Budget-Friendly:** Uses affordable staples like beans, lentils, and oats
+
+## **HYDRATION REMINDER:**
+Drink 2.5-3L water throughout the day, plus additional fluids during training sessions.</pre></td>
+            <td><span class="score score-low">3</span></td>
+            <td>While this meal plan excels in most areas including caloric accuracy, vegan compliance, detailed formatting, and strategic timing, it contains a critical failure regarding macronutrient distribution. The plan provides only 48% of calories from carbohydrates when the mandatory requirement specifies at least 55% for endurance energy needs. This represents a fundamental misunderstanding of endurance athlete nutrition requirements. For a 1,600-calorie plan, 55% carbohydrates would require approximately 220g carbs (880 calories), but the plan provides 246g carbs which equals only 984 calories or 48%. This shortfall could significantly impact the athlete's endurance performance and training capacity.</td>
+        </tr><tr>
+            <td>Test with a medium-build martial artist (175cm, 70kg) targeting performance maintenance with gluten-free restrictions to check if the prompt balances macronutrients appropriately while avoiding wheat-based foods</td>
+            <td><strong>height:</strong> 175cm<br><strong>weight:</strong> 70kg<br><strong>goal:</strong> performance maintenance<br><strong>restrictions:</strong> gluten-free</td>
+            <td>• includes balanced macronutrients (protein 20-30%, carbs 45-65%, fats 20-35%)<br>• excludes all wheat-based foods and gluten sources<br>• provides 5-6 meals/snacks throughout the day<br>• includes timing recommendations for pre/post training</td>
+            <td class="output"><pre># One-Day Gluten-Free Meal Plan for Athletic Performance
+
+**Athlete Profile:** 175cm, 70kg, Performance Maintenance
+**Daily Targets:** 2,800 calories | 140g protein | 420g carbs | 93g fat
+
+---
+
+## **6:30 AM - PRE-WORKOUT**
+- Banana: 120g
+- Rice cakes: 20g
+- Honey: 15g
+
+*Calories: 245 | Protein: 3g | Carbs: 62g | Fat: 1g*
+
+---
+
+## **8:00 AM - POST-WORKOUT BREAKFAST**
+- Gluten-free oats: 80g
+- Greek yogurt (plain): 200g
+- Blueberries: 100g
+- Almonds (sliced): 20g
+- Maple syrup: 20g
+
+*Calories: 685 | Protein: 26g | Carbs: 85g | Fat: 19g*
+
+---
+
+## **11:00 AM - MID-MORNING SNACK**
+- Rice cakes: 30g
+- Natural peanut butter: 25g
+- Apple: 150g
+
+*Calories: 345 | Protein: 9g | Carbs: 42g | Fat: 16g*
+
+---
+
+## **1:30 PM - LUNCH**
+- Grilled chicken breast: 150g
+- Quinoa (cooked): 150g
+- Sweet potato (roasted): 200g
+- Mixed vegetables (broccoli, carrots): 150g
+- Olive oil: 10g
+
+*Calories: 750 | Protein: 48g | Carbs: 85g | Fat: 15g*
+
+---
+
+## **4:00 PM - AFTERNOON SNACK**
+- Greek yogurt: 150g
+- Gluten-free granola: 30g
+- Strawberries: 100g
+
+*Calories: 285 | Protein: 18g | Carbs: 35g | Fat: 8g*
+
+---
+
+## **7:00 PM - DINNER**
+- Salmon fillet: 150g
+- Brown rice: 100g (dry weight)
+- Asparagus: 150g
+- Avocado: 60g
+- Olive oil: 10g
+
+*Calories: 780 | Protein: 45g | Carbs: 75g | Fat: 28g*
+
+---
+
+## **9:30 PM - EVENING SNACK**
+- Cottage cheese: 100g
+- Rice crackers (gluten-free): 25g
+- Walnuts: 15g
+
+*Calories: 265 | Protein: 16g | Carbs: 18g | Fat: 14g*
+
+---
+
+## **DAILY TOTALS**
+- **Calories:** 3,355
+- **Protein:** 165g (20%)
+- **Carbohydrates:** 402g (48%)
+- **Fat:** 101g (27%)
+- **Fiber:** 35g
+
+**Key Notes:**
+- All grains and processed foods are certified gluten-free
+- Timing supports training performance and recovery
+- Hydration: 3-4 liters of water throughout the day
+- Adjust portions by ±10% based on training intensity</pre></td>
+            <td><span class="score score-medium">7</span></td>
+            <td>This solution excellently meets all mandatory requirements and criteria with professional presentation and comprehensive detail. The meal plan is well-structured with appropriate timing, completely gluten-free options, and balanced macronutrients within target ranges. However, there's a significant discrepancy between the stated daily targets (2,800 calories) and actual delivery (3,355 calories), representing a 20% overshoot. While higher caloric intake might be appropriate for some athletes, the plan should either justify this increase or align with stated targets. The excess calories come from generous portion sizes throughout the day. Despite this calibration issue, the plan demonstrates strong nutritional knowledge and practical application.</td>
+        </tr></tbody></table></body></html>
