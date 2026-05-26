@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><title>Prompt Evaluation Report</title>
+<style>
+body{font-family:Arial,sans-serif;padding:20px;color:#333}
+.stats{display:flex;gap:10px;margin-bottom:20px}
+.stat{background:#fff;border-radius:5px;padding:15px;box-shadow:0 2px 5px rgba(0,0,0,.1);flex:1}
+.stat-val{font-size:24px;font-weight:bold;margin-top:5px}
+table{width:100%;border-collapse:collapse;margin-top:20px}
+th{background:#4a4a4a;color:white;text-align:left;padding:12px}
+td{padding:10px;border-bottom:1px solid #ddd;vertical-align:top;width:20%}
+tr:nth-child(even){background:#f9f9f9}
+.output pre{background:#f5f5f5;border:1px solid #ddd;border-radius:4px;padding:10px;font-size:14px;white-space:pre-wrap;word-wrap:break-word}
+.score{font-weight:bold;padding:5px 10px;border-radius:3px}
+.score-high{background:#c8e6c9;color:#2e7d32}
+.score-medium{background:#fff9c4;color:#f57f17}
+.score-low{background:#ffcdd2;color:#c62828}
+</style></head><body>
+<h1>Prompt Evaluation Report</h1>
+<div class="stats">
+<div class="stat"><div>Total Test Cases</div><div class="stat-val">4</div></div>
+<div class="stat"><div>Average Score</div><div class="stat-val">8.2 / 10</div></div>
+<div class="stat"><div>Pass Rate (≥7)</div><div class="stat-val">100.0%</div></div>
+</div>
+<table><thead><tr><th>Scenario</th><th>Prompt Inputs</th><th>Solution Criteria</th><th>Output</th><th>Score</th><th>Reasoning</th></tr></thead>
+<tbody><tr>
+            <td>Test with a dense theoretical physics paragraph containing complex mathematical concepts, specialized terminology, and multiple interrelated theories to evaluate extraction of highly technical topics</td>
+            <td><strong>content:</strong> The quantum chromodynamics (QCD) vacuum exhibits non-trivial topological structure characterized by instantons and anti-instantons, which are classical solutions to the Yang-Mills field equations in E...</td>
+            <td>• Extracts core physics concepts (e.g., quantum chromodynamics, instantons, axial anomaly)<br>• Identifies mathematical frameworks and theorems (e.g., Yang-Mills equations, Atiyah-Singer index theorem)<br>• Captures specialized terminology and phenomena (e.g., strong CP problem, chiral symmetry breaking)<br>• Returns topics as a properly formatted JSON array of strings</td>
+            <td class="output"><pre>[
+  "quantum chromodynamics",
+  "QCD vacuum",
+  "topological structure",
+  "instantons",
+  "anti-instantons",
+  "Yang-Mills field equations",
+  "Euclidean spacetime",
+  "axial anomaly",
+  "Atiyah-Singer index theorem",
+  "strong CP problem",
+  "quantum field theory",
+  "θ-vacuum formalism",
+  "CP violation",
+  "topological susceptibility",
+  "lattice QCD simulations",
+  "neutron electric dipole moment",
+  "axion dark matter models",
+  "Peccei-Quinn mechanism",
+  "chiral symmetry breaking",
+  "topological charge fluctuations",
+  "confinement dynamics",
+  "mass spectrum of light hadrons"
+]
+</pre></td>
+            <td><span class="score score-high">9</span></td>
+            <td>The solution meets all mandatory requirements perfectly: it's a properly formatted JSON array of strings, contains only topics without commentary, and includes nothing but the JSON array. It comprehensively extracts all major physics concepts, mathematical frameworks, and specialized terminology from the passage. The topics are appropriately granular and technically accurate. The only minor weakness is slight inconsistency in how compound terms are handled, but this doesn't significantly impact the quality or usability of the extraction.</td>
+        </tr><tr>
+            <td>Test with an interdisciplinary sociology paragraph that discusses gender, economics, policy, and cultural factors to assess ability to identify and separate overlapping cross-domain topics</td>
+            <td><strong>content:</strong> The gendered wage gap in contemporary labor markets reflects a complex interplay of institutional discrimination, human capital differences, and cultural norms surrounding work-family balance. Policy ...</td>
+            <td>• Identifies at least 4 distinct topic areas (gender, economics, policy, culture)<br>• Separates overlapping concepts into discrete topics rather than combining them<br>• Uses clear, concise topic labels without excessive detail<br>• Returns valid JSON array format with string elements</td>
+            <td class="output"><pre>[
+  "gendered wage gap",
+  "labor markets",
+  "institutional discrimination",
+  "human capital differences",
+  "cultural norms",
+  "work-family balance",
+  "policy interventions",
+  "parental leave mandates",
+  "pay transparency laws",
+  "economic sectors",
+  "neoclassical economic theory",
+  "wage disparities",
+  "productivity differences",
+  "occupational sorting",
+  "feminist economics",
+  "social reproduction theory",
+  "unpaid domestic labor",
+  "market participation",
+  "cultural attitudes",
+  "gender roles",
+  "conservative societies",
+  "employer hiring practices",
+  "career choices",
+  "feedback loops",
+  "economic inequality",
+  "legal protections"
+]
+</pre></td>
+            <td><span class="score score-high">8</span></td>
+            <td>The solution fully meets all mandatory requirements by providing a valid JSON array of strings with no extra commentary. It successfully identifies topics across all required areas (gender, economics, policy, culture) and extracts comprehensive coverage of the passage content. The topics are clearly labeled and appropriately separated. While there are minor inconsistencies in granularity levels, these don't significantly detract from the overall quality. The solution demonstrates thorough understanding of the source material and proper JSON formatting.</td>
+        </tr><tr>
+            <td>Test with a medical research paragraph heavy in statistical analysis, methodology descriptions, and clinical findings to verify extraction of both procedural and substantive research topics</td>
+            <td><strong>content:</strong> A randomized controlled trial was conducted to evaluate the efficacy of metformin versus placebo in reducing cardiovascular events among 2,847 patients with type 2 diabetes mellitus. Participants unde...</td>
+            <td>• Extracts clinical methodology topics (e.g., randomized controlled trial, Cox regression, statistical analysis)<br>• Identifies medical condition and treatment topics (e.g., diabetes, metformin, cardiovascular events)<br>• Captures measurement and assessment topics (e.g., hemoglobin A1c, echocardiography, quality of life)<br>• Returns valid JSON array format with topic strings</td>
+            <td class="output"><pre>[
+  "randomized controlled trial",
+  "metformin",
+  "placebo",
+  "cardiovascular events",
+  "type 2 diabetes mellitus",
+  "hemoglobin A1c",
+  "lipid profiling",
+  "echocardiographic assessment",
+  "major adverse cardiovascular events",
+  "MACE",
+  "Cox proportional hazards regression",
+  "age",
+  "BMI",
+  "smoking status",
+  "all-cause mortality",
+  "hospitalization rates",
+  "quality of life scores",
+  "SF-36 questionnaire",
+  "statistical significance",
+  "Bonferroni correction",
+  "multiple comparisons",
+  "relative risk reduction",
+  "hazard ratio",
+  "confidence interval",
+  "adverse events"
+]
+</pre></td>
+            <td><span class="score score-high">9</span></td>
+            <td>The solution fully meets all mandatory requirements by providing a valid JSON array of topic strings without extra commentary. It demonstrates excellent comprehension of the source material by extracting topics across all required categories: clinical methodology (RCT, Cox regression, statistical methods), medical conditions and treatments (diabetes, metformin), and measurements/assessments (A1c, echocardiography, quality of life). The extraction is thorough and accurate, capturing both primary concepts and important details like statistical methods and outcome measures. The only minor weakness is slight redundancy with MACE being listed both as abbreviation and full term, but this doesn't violate any requirements and could be considered appropriate for completeness.</td>
+        </tr><tr>
+            <td>Test with a humanities literature review paragraph containing subtle conceptual themes, philosophical arguments, and historical references to challenge extraction of abstract intellectual topics</td>
+            <td><strong>content:</strong> The phenomenological tradition established by Husserl and later developed by Heidegger fundamentally challenged the Cartesian subject-object dualism that had dominated Western philosophy since the Enl...</td>
+            <td>• Identifies abstract philosophical concepts (e.g., phenomenology, hermeneutics, embodied cognition)<br>• Extracts historical/temporal references as topics (e.g., Enlightenment, contemporary developments)<br>• Captures interdisciplinary connections (e.g., AI research, poststructuralism)<br>• Returns valid JSON array format with string elements</td>
+            <td class="output"><pre>[
+  "phenomenological tradition",
+  "Husserl",
+  "Heidegger",
+  "Cartesian subject-object dualism",
+  "Western philosophy",
+  "Enlightenment",
+  "representationalism",
+  "Being and Time",
+  "Dasein",
+  "temporal structure",
+  "epistemological frameworks",
+  "immediate presence",
+  "Dreyfus",
+  "Taylor",
+  "artificial intelligence research",
+  "embodied cognition",
+  "computational symbol manipulation",
+  "hermeneutic circle",
+  "Schleiermacher",
+  "Gadamer",
+  "meaning emergence",
+  "dialectical relationship",
+  "interpreter and text",
+  "poststructuralist concerns",
+  "instability of signification",
+  "philosophical rigor",
+  "deconstructive approaches"
+]
+</pre></td>
+            <td><span class="score score-medium">7</span></td>
+            <td>The solution meets all mandatory requirements by providing a valid JSON array of topic strings without commentary. It successfully identifies the core philosophical concepts, historical references, and interdisciplinary connections as specified in the criteria. The extraction is comprehensive and captures the essential intellectual content of the passage. However, there are some inconsistencies in the level of granularity and approach to topic extraction that prevent it from being excellent. The solution demonstrates good understanding of the philosophical content but could be more systematic in its extraction methodology.</td>
+        </tr></tbody></table></body></html>

@@ -1,0 +1,74 @@
+[
+  {
+    "output": "[\n  \"quantum chromodynamics\",\n  \"QCD vacuum\",\n  \"topological structure\",\n  \"instantons\",\n  \"anti-instantons\",\n  \"Yang-Mills field equations\",\n  \"Euclidean spacetime\",\n  \"axial anomaly\",\n  \"Atiyah-Singer index theorem\",\n  \"strong CP problem\",\n  \"quantum field theory\",\n  \"\u03b8-vacuum formalism\",\n  \"CP violation\",\n  \"topological susceptibility\",\n  \"lattice QCD simulations\",\n  \"neutron electric dipole moment\",\n  \"axion dark matter models\",\n  \"Peccei-Quinn mechanism\",\n  \"chiral symmetry breaking\",\n  \"topological charge fluctuations\",\n  \"confinement dynamics\",\n  \"mass spectrum of light hadrons\"\n]\n",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "The quantum chromodynamics (QCD) vacuum exhibits non-trivial topological structure characterized by instantons and anti-instantons, which are classical solutions to the Yang-Mills field equations in Euclidean spacetime. These topological configurations contribute to the axial anomaly through the Atiyah-Singer index theorem, leading to the strong CP problem in quantum field theory. The \u03b8-vacuum formalism, introduced by Callan, Dashen, and Gross, provides a framework for understanding CP violation in the strong sector via the topological susceptibility \u03c7(0). Recent lattice QCD simulations have constrained the neutron electric dipole moment, suggesting \u03b8 \u2248 10^-10, which motivates axion dark matter models based on the Peccei-Quinn mechanism. The interplay between chiral symmetry breaking and topological charge fluctuations remains central to understanding confinement dynamics and the mass spectrum of light hadrons."
+      },
+      "solution_criteria": [
+        "Extracts core physics concepts (e.g., quantum chromodynamics, instantons, axial anomaly)",
+        "Identifies mathematical frameworks and theorems (e.g., Yang-Mills equations, Atiyah-Singer index theorem)",
+        "Captures specialized terminology and phenomena (e.g., strong CP problem, chiral symmetry breaking)",
+        "Returns topics as a properly formatted JSON array of strings"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+      "scenario": "Test with a dense theoretical physics paragraph containing complex mathematical concepts, specialized terminology, and multiple interrelated theories to evaluate extraction of highly technical topics"
+    },
+    "score": 9,
+    "reasoning": "The solution meets all mandatory requirements perfectly: it's a properly formatted JSON array of strings, contains only topics without commentary, and includes nothing but the JSON array. It comprehensively extracts all major physics concepts, mathematical frameworks, and specialized terminology from the passage. The topics are appropriately granular and technically accurate. The only minor weakness is slight inconsistency in how compound terms are handled, but this doesn't significantly impact the quality or usability of the extraction."
+  },
+  {
+    "output": "[\n  \"gendered wage gap\",\n  \"labor markets\",\n  \"institutional discrimination\",\n  \"human capital differences\",\n  \"cultural norms\",\n  \"work-family balance\",\n  \"policy interventions\",\n  \"parental leave mandates\",\n  \"pay transparency laws\",\n  \"economic sectors\",\n  \"neoclassical economic theory\",\n  \"wage disparities\",\n  \"productivity differences\",\n  \"occupational sorting\",\n  \"feminist economics\",\n  \"social reproduction theory\",\n  \"unpaid domestic labor\",\n  \"market participation\",\n  \"cultural attitudes\",\n  \"gender roles\",\n  \"conservative societies\",\n  \"employer hiring practices\",\n  \"career choices\",\n  \"feedback loops\",\n  \"economic inequality\",\n  \"legal protections\"\n]\n",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "The gendered wage gap in contemporary labor markets reflects a complex interplay of institutional discrimination, human capital differences, and cultural norms surrounding work-family balance. Policy interventions such as parental leave mandates and pay transparency laws have shown mixed effectiveness across different economic sectors. While neoclassical economic theory attributes wage disparities primarily to productivity differences and occupational sorting, feminist economists argue that social reproduction theory better explains how unpaid domestic labor systematically disadvantages women in market participation. Cultural attitudes toward gender roles, particularly in conservative societies, continue to influence both employer hiring practices and individual career choices, creating feedback loops that perpetuate economic inequality despite formal legal protections."
+      },
+      "solution_criteria": [
+        "Identifies at least 4 distinct topic areas (gender, economics, policy, culture)",
+        "Separates overlapping concepts into discrete topics rather than combining them",
+        "Uses clear, concise topic labels without excessive detail",
+        "Returns valid JSON array format with string elements"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+      "scenario": "Test with an interdisciplinary sociology paragraph that discusses gender, economics, policy, and cultural factors to assess ability to identify and separate overlapping cross-domain topics"
+    },
+    "score": 8,
+    "reasoning": "The solution fully meets all mandatory requirements by providing a valid JSON array of strings with no extra commentary. It successfully identifies topics across all required areas (gender, economics, policy, culture) and extracts comprehensive coverage of the passage content. The topics are clearly labeled and appropriately separated. While there are minor inconsistencies in granularity levels, these don't significantly detract from the overall quality. The solution demonstrates thorough understanding of the source material and proper JSON formatting."
+  },
+  {
+    "output": "[\n  \"randomized controlled trial\",\n  \"metformin\",\n  \"placebo\",\n  \"cardiovascular events\",\n  \"type 2 diabetes mellitus\",\n  \"hemoglobin A1c\",\n  \"lipid profiling\",\n  \"echocardiographic assessment\",\n  \"major adverse cardiovascular events\",\n  \"MACE\",\n  \"Cox proportional hazards regression\",\n  \"age\",\n  \"BMI\",\n  \"smoking status\",\n  \"all-cause mortality\",\n  \"hospitalization rates\",\n  \"quality of life scores\",\n  \"SF-36 questionnaire\",\n  \"statistical significance\",\n  \"Bonferroni correction\",\n  \"multiple comparisons\",\n  \"relative risk reduction\",\n  \"hazard ratio\",\n  \"confidence interval\",\n  \"adverse events\"\n]\n",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "A randomized controlled trial was conducted to evaluate the efficacy of metformin versus placebo in reducing cardiovascular events among 2,847 patients with type 2 diabetes mellitus. Participants underwent baseline hemoglobin A1c measurements, lipid profiling, and echocardiographic assessment. The primary endpoint was major adverse cardiovascular events (MACE) at 24 months, analyzed using Cox proportional hazards regression with adjustment for age, BMI, and smoking status. Secondary outcomes included all-cause mortality, hospitalization rates, and quality of life scores measured by the SF-36 questionnaire. Statistical significance was set at p<0.05 with Bonferroni correction for multiple comparisons. Results showed a 23% relative risk reduction in MACE (HR 0.77, 95% CI 0.61-0.94, p=0.032) in the metformin group compared to placebo, with no significant difference in adverse events between groups."
+      },
+      "solution_criteria": [
+        "Extracts clinical methodology topics (e.g., randomized controlled trial, Cox regression, statistical analysis)",
+        "Identifies medical condition and treatment topics (e.g., diabetes, metformin, cardiovascular events)",
+        "Captures measurement and assessment topics (e.g., hemoglobin A1c, echocardiography, quality of life)",
+        "Returns valid JSON array format with topic strings"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+      "scenario": "Test with a medical research paragraph heavy in statistical analysis, methodology descriptions, and clinical findings to verify extraction of both procedural and substantive research topics"
+    },
+    "score": 9,
+    "reasoning": "The solution fully meets all mandatory requirements by providing a valid JSON array of topic strings without extra commentary. It demonstrates excellent comprehension of the source material by extracting topics across all required categories: clinical methodology (RCT, Cox regression, statistical methods), medical conditions and treatments (diabetes, metformin), and measurements/assessments (A1c, echocardiography, quality of life). The extraction is thorough and accurate, capturing both primary concepts and important details like statistical methods and outcome measures. The only minor weakness is slight redundancy with MACE being listed both as abbreviation and full term, but this doesn't violate any requirements and could be considered appropriate for completeness."
+  },
+  {
+    "output": "[\n  \"phenomenological tradition\",\n  \"Husserl\",\n  \"Heidegger\",\n  \"Cartesian subject-object dualism\",\n  \"Western philosophy\",\n  \"Enlightenment\",\n  \"representationalism\",\n  \"Being and Time\",\n  \"Dasein\",\n  \"temporal structure\",\n  \"epistemological frameworks\",\n  \"immediate presence\",\n  \"Dreyfus\",\n  \"Taylor\",\n  \"artificial intelligence research\",\n  \"embodied cognition\",\n  \"computational symbol manipulation\",\n  \"hermeneutic circle\",\n  \"Schleiermacher\",\n  \"Gadamer\",\n  \"meaning emergence\",\n  \"dialectical relationship\",\n  \"interpreter and text\",\n  \"poststructuralist concerns\",\n  \"instability of signification\",\n  \"philosophical rigor\",\n  \"deconstructive approaches\"\n]\n",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "The phenomenological tradition established by Husserl and later developed by Heidegger fundamentally challenged the Cartesian subject-object dualism that had dominated Western philosophy since the Enlightenment. This critique of representationalism, as articulated in Being and Time, reveals how Dasein's temporal structure undermines traditional epistemological frameworks predicated on immediate presence. Contemporary scholars like Dreyfus and Taylor have extended this critique to artificial intelligence research, arguing that embodied cognition cannot be reduced to computational symbol manipulation. The hermeneutic circle, originally theorized by Schleiermacher and refined by Gadamer, provides an alternative framework for understanding how meaning emerges through the dialectical relationship between interpreter and text, anticipating poststructuralist concerns with the instability of signification while maintaining a commitment to philosophical rigor that distinguishes it from deconstructive approaches."
+      },
+      "solution_criteria": [
+        "Identifies abstract philosophical concepts (e.g., phenomenology, hermeneutics, embodied cognition)",
+        "Extracts historical/temporal references as topics (e.g., Enlightenment, contemporary developments)",
+        "Captures interdisciplinary connections (e.g., AI research, poststructuralism)",
+        "Returns valid JSON array format with string elements"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+      "scenario": "Test with a humanities literature review paragraph containing subtle conceptual themes, philosophical arguments, and historical references to challenge extraction of abstract intellectual topics"
+    },
+    "score": 7,
+    "reasoning": "The solution meets all mandatory requirements by providing a valid JSON array of topic strings without commentary. It successfully identifies the core philosophical concepts, historical references, and interdisciplinary connections as specified in the criteria. The extraction is comprehensive and captures the essential intellectual content of the passage. However, there are some inconsistencies in the level of granularity and approach to topic extraction that prevent it from being excellent. The solution demonstrates good understanding of the philosophical content but could be more systematic in its extraction methodology."
+  }
+]
