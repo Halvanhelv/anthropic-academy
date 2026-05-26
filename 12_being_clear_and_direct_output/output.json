@@ -1,0 +1,64 @@
+[
+  {
+    "output": "# One-Day Gluten-Free Meal Plan for Endurance Runner\n*Target: ~1,400-1,500 calories for gradual weight loss while maintaining performance*\n\n## **BREAKFAST** (350-400 calories)\n**Quinoa Breakfast Bowl**\n- 1/2 cup cooked quinoa\n- 1/2 cup mixed berries (blueberries, strawberries)\n- 1 tbsp almond butter\n- 1 tsp chia seeds\n- 1/4 cup unsweetened almond milk\n- Cinnamon to taste\n\n## **MID-MORNING SNACK** (150-200 calories)\n- 1 medium banana\n- 10 raw almonds\n\n## **LUNCH** (400-450 calories)\n**Power Salad with Grilled Chicken**\n- 3 oz grilled chicken breast\n- 2 cups mixed leafy greens\n- 1/2 avocado\n- 1/2 cup cherry tomatoes\n- 1/4 cup cucumber\n- 2 tbsp pumpkin seeds\n- Dressing: 1 tbsp olive oil + lemon juice + herbs\n\n## **PRE-WORKOUT SNACK** (100-150 calories)\n- 1 medium apple\n- 1 tbsp natural peanut butter\n\n## **DINNER** (400-450 calories)\n**Baked Salmon with Sweet Potato**\n- 4 oz baked salmon\n- 1 medium roasted sweet potato\n- 1 cup steamed broccoli\n- 1 tsp olive oil for cooking\n\n## **EVENING SNACK** (100 calories)\n- 3/4 cup plain Greek yogurt with 1 tsp honey\n\n---\n\n## **Key Nutritional Benefits:**\n- **High-quality proteins** for muscle recovery\n- **Complex carbohydrates** for sustained energy\n- **Healthy fats** for hormone production and satiety\n- **Antioxidants** from colorful fruits and vegetables\n- **Adequate hydration** (drink 2-3L water throughout the day)\n\n## **Timing Tips:**\n- Eat the pre-workout snack 30-60 minutes before training\n- Have dinner within 2 hours post-workout for optimal recovery\n- Space meals 3-4 hours apart to maintain stable energy levels\n\n*Note: Adjust portions based on training intensity and individual response. Consult a sports nutritionist for personalized guidance.*",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "160cm",
+        "weight": "50kg",
+        "goal": "weight loss for endurance running",
+        "restrictions": "gluten-free"
+      },
+      "solution_criteria": [
+        "Total daily calories between 1400-1600 to support moderate weight loss",
+        "All meals and snacks must be completely gluten-free",
+        "Includes pre and post-workout nutrition timing recommendations",
+        "Emphasizes lean proteins and complex carbohydrates suitable for endurance training"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+      "scenario": "Test with a petite endurance runner (160cm, 50kg) trying to lose weight with gluten-free restrictions - should create a lower-calorie meal plan focused on lean proteins, complex carbs, and timing around training sessions"
+    },
+    "score": 3,
+    "reasoning": "This solution fails the mandatory requirements despite having many positive qualities. While it successfully addresses the gluten-free restriction, appropriate calorie range, and includes good pre/post-workout guidance with exact portions, it completely omits two critical mandatory elements: the daily caloric total and macronutrient breakdown. The solution provides calorie ranges per meal (350-400, 150-200, etc.) but never calculates or states the actual daily total. More critically, there is zero macronutrient information provided. These are explicit mandatory requirements, and their absence constitutes automatic failure regardless of other strengths."
+  },
+  {
+    "output": "# One-Day Meal Plan for Athletic Performance\n\n**Athlete Profile:** 175cm, 75kg, Weight Maintenance\n**Estimated Daily Needs:** ~2,800-3,000 calories, 120-150g protein\n\n## **BREAKFAST** (7:00 AM)\n**Pre-Workout Fuel**\n- 1 cup oatmeal with 1 sliced banana and 2 tbsp chopped walnuts\n- 2 whole eggs + 2 egg whites scrambled\n- 1 cup fresh berries\n- 1 glass orange juice (8 oz)\n\n*Calories: ~650 | Protein: ~25g | Carbs: ~85g*\n\n## **MID-MORNING SNACK** (10:00 AM)\n**Post-Workout Recovery**\n- Greek yogurt (1 cup) with 1 tbsp honey\n- Small handful of almonds (15-20)\n\n*Calories: ~300 | Protein: ~20g | Carbs: ~25g*\n\n## **LUNCH** (1:00 PM)\n**Balanced Refuel**\n- Grilled chicken breast (6 oz)\n- Quinoa salad (1 cup) with mixed vegetables, olive oil dressing\n- Medium sweet potato, roasted\n- Large mixed green salad with avocado\n\n*Calories: ~750 | Protein: ~45g | Carbs: ~65g*\n\n## **AFTERNOON SNACK** (4:00 PM)\n**Energy Sustainer**\n- Whole grain toast (2 slices) with 2 tbsp almond butter\n- 1 medium apple\n- Glass of low-fat milk (8 oz)\n\n*Calories: ~450 | Protein: ~18g | Carbs: ~45g*\n\n## **DINNER** (7:30 PM)\n**Recovery & Repair**\n- Baked salmon fillet (6 oz)\n- Brown rice (1 cup cooked)\n- Steamed broccoli and carrots\n- Small dinner roll with butter\n\n*Calories: ~700 | Protein: ~42g | Carbs: ~55g*\n\n## **EVENING SNACK** (9:30 PM)\n**Overnight Recovery**\n- Cottage cheese (\u00bd cup) with sliced peaches\n- 2-3 whole grain crackers\n\n*Calories: ~200 | Protein: ~15g | Carbs: ~20g*\n\n---\n\n## **DAILY TOTALS**\n- **Calories:** ~3,050\n- **Protein:** ~165g (22%)\n- **Carbohydrates:** ~295g (38%)\n- **Fat:** ~135g (40%)\n\n## **HYDRATION**\n- 3-4 liters of water throughout the day\n- Additional electrolyte drink during/after intense training\n\n**Note:** Adjust portion sizes based on training intensity and individual response. Time meals around training schedule for optimal performance and recovery.",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "175cm",
+        "weight": "75kg",
+        "goal": "maintain current weight",
+        "restrictions": "none"
+      },
+      "solution_criteria": [
+        "includes 2500-2800 total daily calories",
+        "contains protein sources for muscle recovery",
+        "includes hydration recommendations"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+      "scenario": "Test with an average-sized basketball player (175cm, 75kg) maintaining current weight with no dietary restrictions - should produce a balanced meal plan with moderate calories emphasizing recovery foods and hydration"
+    },
+    "score": 6,
+    "reasoning": "The solution meets all mandatory requirements by providing daily caloric total, complete macronutrient breakdown, and detailed meals with specific foods, portions, and timing. It also includes protein sources and hydration recommendations as required by the criteria. However, there is a significant issue: the caloric content (3,050) exceeds the specified range of 2500-2800 calories by a substantial margin. While this might be appropriate for some athletes, it doesn't align with the stated criteria. The meal plan is otherwise well-constructed with appropriate athletic nutrition principles, good variety, and strategic timing."
+  },
+  {
+    "output": "# One-Day Vegan Bulking Meal Plan\n**Target: ~3,500 calories | 160-170g protein | 450-500g carbs | 120-140g fat**\n\n## Pre-Workout (6:30 AM)\n**Quick Energy Boost**\n- 1 large banana with 2 tbsp almond butter\n- 1 cup oat milk\n- *Calories: ~400 | Protein: 12g*\n\n## Post-Workout Breakfast (8:00 AM)\n**Power Smoothie Bowl**\n- 1 cup oat milk + 1 scoop vegan protein powder (pea/hemp blend)\n- 1 cup rolled oats (cooked)\n- 1 tbsp ground flaxseed\n- 1 tbsp chia seeds\n- 1/2 cup blueberries\n- 1 sliced banana\n- 2 tbsp chopped walnuts\n- *Calories: ~750 | Protein: 35g*\n\n## Mid-Morning Snack (10:30 AM)\n**Protein-Rich Trail Mix**\n- 1/4 cup almonds\n- 1/4 cup pumpkin seeds\n- 2 tbsp hemp hearts\n- 1/4 cup dried dates (chopped)\n- *Calories: ~400 | Protein: 15g*\n\n## Lunch (1:00 PM)\n**Hearty Buddha Bowl**\n- 1.5 cups cooked quinoa\n- 1 cup baked chickpeas (seasoned with tahini)\n- 1/2 large avocado\n- 1 cup roasted sweet potato cubes\n- 2 cups mixed greens\n- 2 tbsp tahini dressing\n- 2 tbsp nutritional yeast\n- *Calories: ~800 | Protein: 30g*\n\n## Afternoon Snack (4:00 PM)\n**Energy Balls + Drink**\n- 3 homemade energy balls (oats, dates, peanut butter, protein powder)\n- 1 cup fortified soy milk\n- *Calories: ~450 | Protein: 20g*\n\n## Dinner (7:00 PM)\n**Muscle-Building Feast**\n- 1.5 cups cooked brown rice\n- 1 cup lentil and vegetable curry (made with coconut milk)\n- 4 oz firm tofu (marinated and grilled)\n- 2 tbsp pumpkin seeds (garnish)\n- Side of steamed broccoli (1 cup)\n- *Calories: ~900 | Protein: 45g*\n\n## Evening Snack (9:30 PM)\n**Recovery Boost**\n- 2 slices whole grain bread with 3 tbsp natural peanut butter\n- 1 glass oat milk with 1 tsp spirulina powder\n- *Calories: ~500 | Protein: 20g*\n\n---\n\n## Daily Totals: ~4,200 calories | 177g protein | 485g carbs | 135g fat\n\n## Hydration\n- Aim for 3-4 liters of water throughout the day\n- Add electrolyte powder to water during/after workouts\n\n## Supplements to Consider\n- B12 vitamin\n- Vitamin D3\n- Algae-based omega-3\n- Creatine monohydrate\n\n## Meal Prep Tips\n- Batch cook quinoa, brown rice, and lentils on Sundays\n- Pre-make energy balls and store in fridge\n- Prep smoothie ingredients in freezer bags\n- Marinate tofu overnight for better flavor\n\nThis plan provides high-quality plant proteins, complex carbs for sustained energy, and healthy fats to support muscle growth and recovery.",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "190cm",
+        "weight": "95kg",
+        "goal": "bulk up",
+        "restrictions": "vegan"
+      },
+      "solution_criteria": [
+        "Daily calorie intake between 3200-3800 calories",
+        "Minimum 150g plant-based protein from legumes, nuts, seeds, and protein powders",
+        "All meals and snacks contain only vegan ingredients",
+        "Meal plan fits within a single day format"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+      "scenario": "Test with a tall, heavy powerlifter (190cm, 95kg) aiming to bulk up with vegan restrictions - should generate high-calorie plant-based meals with emphasis on protein sources like legumes, nuts, and protein powders"
+    },
+    "score": 6,
+    "reasoning": "While this meal plan excellently meets most criteria with comprehensive vegan protein sources (177g), detailed formatting, and proper single-day structure, it has a critical flaw: the total daily calories (4,200) exceed the mandatory requirement of 3,200-3,800 calories by over 400 calories. This represents a 10-15% overage beyond the specified range. Despite strong execution in protein variety, meal timing, and practical details, this calorie violation of the mandatory criteria prevents a higher score. The plan would be excellent if calories were reduced to fit the required range."
+  }
+]

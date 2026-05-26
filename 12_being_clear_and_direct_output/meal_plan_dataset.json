@@ -1,0 +1,49 @@
+[
+  {
+    "prompt_inputs": {
+      "height": "175cm",
+      "weight": "75kg",
+      "goal": "maintain current weight",
+      "restrictions": "none"
+    },
+    "solution_criteria": [
+      "includes 2500-2800 total daily calories",
+      "contains protein sources for muscle recovery",
+      "includes hydration recommendations"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Test with an average-sized basketball player (175cm, 75kg) maintaining current weight with no dietary restrictions - should produce a balanced meal plan with moderate calories emphasizing recovery foods and hydration"
+  },
+  {
+    "prompt_inputs": {
+      "height": "190cm",
+      "weight": "95kg",
+      "goal": "bulk up",
+      "restrictions": "vegan"
+    },
+    "solution_criteria": [
+      "Daily calorie intake between 3200-3800 calories",
+      "Minimum 150g plant-based protein from legumes, nuts, seeds, and protein powders",
+      "All meals and snacks contain only vegan ingredients",
+      "Meal plan fits within a single day format"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Test with a tall, heavy powerlifter (190cm, 95kg) aiming to bulk up with vegan restrictions - should generate high-calorie plant-based meals with emphasis on protein sources like legumes, nuts, and protein powders"
+  },
+  {
+    "prompt_inputs": {
+      "height": "160cm",
+      "weight": "50kg",
+      "goal": "weight loss for endurance running",
+      "restrictions": "gluten-free"
+    },
+    "solution_criteria": [
+      "Total daily calories between 1400-1600 to support moderate weight loss",
+      "All meals and snacks must be completely gluten-free",
+      "Includes pre and post-workout nutrition timing recommendations",
+      "Emphasizes lean proteins and complex carbohydrates suitable for endurance training"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Test with a petite endurance runner (160cm, 50kg) trying to lose weight with gluten-free restrictions - should create a lower-calorie meal plan focused on lean proteins, complex carbs, and timing around training sessions"
+  }
+]

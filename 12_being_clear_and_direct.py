@@ -162,7 +162,7 @@ Requirements:
         return tc
 
     def run_evaluation(self, run_prompt_function, dataset_file, extra_criteria=None,
-                       json_output_file="11_prompt_engineering_output/output.json", html_output_file="11_prompt_engineering_output/output.html"):
+                       json_output_file="12_being_clear_and_direct_output/output.json", html_output_file="12_being_clear_and_direct_output/output.html"):
         with open(dataset_file) as f:
             dataset = json.load(f)
         results = []
@@ -243,14 +243,14 @@ dataset = evaluator.generate_dataset(
         "goal": "Goal of the athlete",
         "restrictions": "Dietary restrictions of the athlete",
     },
-    output_file="11_prompt_engineering_output/meal_plan_dataset.json",
+    output_file="12_being_clear_and_direct_output/meal_plan_dataset.json",
     num_cases=3,
 )
 
 
 def run_prompt(prompt_inputs):
     prompt = f"""
-What should this person eat?
+Generate a one-day meal plan for an athlete that meets their dietary restrictions.
 
 - Height: {prompt_inputs["height"]}
 - Weight: {prompt_inputs["weight"]}
@@ -264,7 +264,7 @@ What should this person eat?
 
 results = evaluator.run_evaluation(
     run_prompt_function=run_prompt,
-    dataset_file="11_prompt_engineering_output/meal_plan_dataset.json",
+    dataset_file="12_being_clear_and_direct_output/meal_plan_dataset.json",
     extra_criteria="""
 The output should include:
 - Daily caloric total
