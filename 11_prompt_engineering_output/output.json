@@ -1,0 +1,73 @@
+[
+  {
+    "output": "For this person's weight cutting goals, here's a nutritional approach:\n\n## **Caloric Target**\n- **Daily calories**: ~1,800-2,000 (creating a moderate deficit)\n- **Protein**: 130-150g daily (1.7-2g per kg bodyweight)\n\n## **Food Recommendations**\n\n**Protein Sources:**\n- Lean meats (chicken breast, turkey, lean beef)\n- Fish (salmon, cod, tuna)\n- Eggs\n- Greek yogurt (plain, unsweetened)\n- Cottage cheese\n\n**Carbohydrates:**\n- Oats, quinoa, brown rice\n- Sweet potatoes\n- Fruits (berries, apples, bananas)\n- Vegetables (all varieties)\n\n**Healthy Fats:**\n- Avocados\n- Nuts and seeds\n- Olive oil\n- Fatty fish\n\n## **Sample Daily Structure**\n- **Breakfast**: Oats with berries and Greek yogurt\n- **Lunch**: Grilled chicken salad with olive oil dressing\n- **Dinner**: Baked fish with roasted vegetables and quinoa\n- **Snacks**: Apple with almond butter, or mixed nuts\n\n## **Key Tips**\n- Prioritize protein at each meal for satiety\n- Include fiber-rich vegetables to stay full\n- Stay hydrated\n- Time carbs around training if applicable\n\n**Important**: Consider consulting a sports nutritionist for competition-specific timing and personalized macro adjustments based on your sport and timeline.",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "170cm",
+        "weight": "75kg",
+        "goal": "cut weight for competition",
+        "restrictions": "no processed foods"
+      },
+      "solution_criteria": [
+        "Creates caloric deficit appropriate for weight cutting (1500-1800 calories)",
+        "Includes high protein content (120-140g) to preserve muscle mass",
+        "Contains only whole, unprocessed foods",
+        "Presents meal plan in compact, easy-to-follow format"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+      "scenario": {
+        "test_idea": "Combat sport athlete with weight cutting goal",
+        "description": "Test with an MMA fighter (170cm, 75kg) whose goal is 'cut weight for competition' with restrictions 'no processed foods'. Verify the plan creates appropriate caloric deficit while preserving muscle mass and avoiding processed foods in a compact format."
+      }
+    },
+    "score": 2,
+    "reasoning": "This solution completely fails the mandatory requirements. While it demonstrates good nutritional knowledge and provides appropriate food recommendations for weight cutting, it fundamentally fails to deliver what was requested. The task asked for a '1 day meal plan' but this provides general guidelines instead. The mandatory criteria explicitly require exact foods, portions, timing, daily caloric total, and macronutrient breakdown - none of which are provided. The solution gives ranges and suggestions rather than a concrete, actionable meal plan. An athlete could not follow this as written because there are no specific quantities or timing details."
+  },
+  {
+    "output": "Based on the provided information, here's a nutrition plan to support race performance while maintaining gluten-free and dairy-free requirements:\n\n## Core Nutrition Strategy\n\n**Pre-Training/Race (2-3 hours before):**\n- Gluten-free oats with banana and almond butter\n- Rice with lean protein (chicken, fish, or tofu)\n- Sweet potato with a small amount of olive oil\n\n**During Long Sessions (>90 minutes):**\n- Dates or bananas\n- Gluten-free energy gels or homemade rice-based energy balls\n- Coconut water or diluted fruit juice\n\n**Post-Training (within 30-60 minutes):**\n- Quinoa bowl with vegetables and protein\n- Rice cakes with almond/sunflower seed butter\n- Smoothie with fruits, plant-based protein powder, and coconut milk\n\n## Daily Nutrition Focus\n\n**Quality Carbohydrates:**\n- Quinoa, rice, sweet potatoes, gluten-free oats\n- Fruits (especially bananas, berries, dates)\n\n**Lean Proteins:**\n- Fish, chicken, eggs, legumes, nuts, seeds\n- Plant-based protein powders (pea, rice, hemp)\n\n**Healthy Fats:**\n- Avocado, nuts, seeds, olive oil, coconut oil\n\n**Hydration:**\n- Water throughout the day\n- Electrolyte replacement during/after intense sessions\n\nWould you like me to elaborate on any specific aspect, such as meal timing around training sessions or specific race day nutrition?",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "175cm",
+        "weight": "65kg",
+        "goal": "improve race performance",
+        "restrictions": "gluten-free, dairy-free"
+      },
+      "solution_criteria": [
+        "Provides 6-8g carbohydrates per kg body weight (390-520g total) for endurance training",
+        "All meals and snacks are completely gluten-free and dairy-free",
+        "Plan fits within one day and uses concise formatting",
+        "Includes appropriate pre/post workout nutrition timing"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+      "scenario": {
+        "test_idea": "Endurance athlete with specific dietary restrictions",
+        "description": "Test with a marathon runner (175cm, 65kg) whose goal is 'improve race performance' with restrictions 'gluten-free, dairy-free'. Evaluate if the plan provides adequate carbohydrates for endurance while respecting restrictions and staying concise."
+      }
+    },
+    "score": 2,
+    "reasoning": "This solution fails all three mandatory requirements that would result in automatic failure. It provides no daily caloric total, no macronutrient breakdown, and no meals with exact foods, portions, and timing. Instead of delivering a concrete 1-day meal plan as requested, it offers only general nutrition guidelines and food categories. While the dietary restrictions are properly addressed and the nutrition advice is sound, the complete absence of the mandatory quantitative elements (calories, macros, portions, specific timing) makes this fundamentally inadequate as a meal plan. The athlete cannot follow this as an actual daily eating schedule."
+  },
+  {
+    "output": "Based on the profile you've provided, here's a muscle-building nutrition plan for a vegetarian:\n\n## Daily Targets\n- **Calories:** 2,800-3,200 (500+ surplus for muscle gain)\n- **Protein:** 140-160g daily (1.6-1.8g per kg body weight)\n- **Carbs:** 300-400g (fuel for workouts)\n- **Fats:** 80-100g (hormone production)\n\n## Key Protein Sources\n- **Legumes:** Lentils, chickpeas, black beans (15-18g per cup)\n- **Dairy:** Greek yogurt, cottage cheese, milk\n- **Eggs:** Whole eggs and egg whites\n- **Plant proteins:** Tofu, tempeh, seitan\n- **Protein powder:** Whey or plant-based supplements\n- **Nuts/seeds:** Almonds, hemp seeds, chia seeds\n\n## Sample Daily Structure\n**Breakfast:** Oatmeal with protein powder, berries, nuts\n**Lunch:** Quinoa bowl with beans, vegetables, tahini\n**Dinner:** Tofu/tempeh stir-fry with brown rice\n**Snacks:** Greek yogurt, protein smoothies, hummus with vegetables\n\n## Key Tips\n- Eat protein at every meal (25-30g per meal)\n- Time protein intake around workouts\n- Stay hydrated (3+ liters daily)\n- Include vitamin B12 and iron-rich foods\n- Consider creatine supplementation\n\nWould you like me to elaborate on any specific aspect of this plan?",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "180cm",
+        "weight": "90kg",
+        "goal": "gain muscle mass",
+        "restrictions": "vegetarian"
+      },
+      "solution_criteria": [
+        "Provides at least 120g protein from vegetarian sources",
+        "Delivers 2800-3200 calories for muscle gain",
+        "Meal plan is concise and fits within one day"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+      "scenario": {
+        "test_idea": "Strength athlete with weight gain goal",
+        "description": "Test with a powerlifter (180cm, 90kg) whose goal is 'gain muscle mass' with restrictions 'vegetarian'. Assess if the plan delivers sufficient protein and calories for muscle building within vegetarian constraints while maintaining meal plan brevity."
+      }
+    },
+    "score": 3,
+    "reasoning": "This solution fails all three mandatory requirements despite having good foundational knowledge. The task explicitly required 'exact foods, portions, and timing' but the solution only provides general meal categories like 'Oatmeal with protein powder, berries, nuts' without specifying amounts. There's no daily caloric total (just a range), no specific macronutrient breakdown with exact grams, and no meal timing beyond breakfast/lunch/dinner labels. While the nutritional knowledge and vegetarian protein sources are solid, this reads more like nutritional guidelines than an actual meal plan. The mandatory criteria violations result in automatic failure regardless of the solution's other merits."
+  }
+]

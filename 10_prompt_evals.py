@@ -66,7 +66,7 @@ Please generate 3 objects.
 
 # --- Step 1: Generate dataset ---
 dataset = generate_dataset()
-with open("dataset.json", "w") as f:
+with open("10_prompt_evals_output/dataset.json", "w") as f:
     json.dump(dataset, f, indent=2)
 print("Dataset generated and saved.\n")
 
@@ -181,7 +181,7 @@ def run_eval(dataset):
     return results
 
 
-with open("dataset.json", "r") as f:
+with open("10_prompt_evals_output/dataset.json", "r") as f:
     dataset = json.load(f)
 
 results = run_eval(dataset)

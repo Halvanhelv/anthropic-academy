@@ -25,6 +25,7 @@ Each lesson has both `.py` (run standalone) and `.ipynb` (interactive in VS Code
 | 08 | `structured_data` | Structured data with prefill + stop sequence |
 | 09 | `structured_data_exercise` | Prefill progression — clean commands |
 | 10 | `prompt_evals` | Eval pipeline with model-based grading |
+| 11 | `prompt_engineering` | Prompt engineering baseline (meal plan) |
 
 ## Conventions
 

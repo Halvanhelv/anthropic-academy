@@ -1,0 +1,58 @@
+[
+  {
+    "prompt_inputs": {
+      "height": "180cm",
+      "weight": "90kg",
+      "goal": "gain muscle mass",
+      "restrictions": "vegetarian"
+    },
+    "solution_criteria": [
+      "Provides at least 120g protein from vegetarian sources",
+      "Delivers 2800-3200 calories for muscle gain",
+      "Meal plan is concise and fits within one day"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": {
+      "test_idea": "Strength athlete with weight gain goal",
+      "description": "Test with a powerlifter (180cm, 90kg) whose goal is 'gain muscle mass' with restrictions 'vegetarian'. Assess if the plan delivers sufficient protein and calories for muscle building within vegetarian constraints while maintaining meal plan brevity."
+    }
+  },
+  {
+    "prompt_inputs": {
+      "height": "170cm",
+      "weight": "75kg",
+      "goal": "cut weight for competition",
+      "restrictions": "no processed foods"
+    },
+    "solution_criteria": [
+      "Creates caloric deficit appropriate for weight cutting (1500-1800 calories)",
+      "Includes high protein content (120-140g) to preserve muscle mass",
+      "Contains only whole, unprocessed foods",
+      "Presents meal plan in compact, easy-to-follow format"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": {
+      "test_idea": "Combat sport athlete with weight cutting goal",
+      "description": "Test with an MMA fighter (170cm, 75kg) whose goal is 'cut weight for competition' with restrictions 'no processed foods'. Verify the plan creates appropriate caloric deficit while preserving muscle mass and avoiding processed foods in a compact format."
+    }
+  },
+  {
+    "prompt_inputs": {
+      "height": "175cm",
+      "weight": "65kg",
+      "goal": "improve race performance",
+      "restrictions": "gluten-free, dairy-free"
+    },
+    "solution_criteria": [
+      "Provides 6-8g carbohydrates per kg body weight (390-520g total) for endurance training",
+      "All meals and snacks are completely gluten-free and dairy-free",
+      "Plan fits within one day and uses concise formatting",
+      "Includes appropriate pre/post workout nutrition timing"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": {
+      "test_idea": "Endurance athlete with specific dietary restrictions",
+      "description": "Test with a marathon runner (175cm, 65kg) whose goal is 'improve race performance' with restrictions 'gluten-free, dairy-free'. Evaluate if the plan provides adequate carbohydrates for endurance while respecting restrictions and staying concise."
+    }
+  }
+]
