@@ -1,0 +1,48 @@
+[
+  {
+    "prompt_inputs": {
+      "height": "185cm",
+      "weight": "75kg",
+      "goal": "marathon training",
+      "restrictions": "vegan"
+    },
+    "solution_criteria": [
+      "Provides at least 80-100g plant-based protein from varied sources",
+      "Includes 6-8g carbohydrates per kg body weight for endurance training",
+      "Contains pre and post-workout meal timing recommendations"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Test with a tall endurance athlete (185cm, 75kg) training for marathon with vegan dietary restrictions to evaluate if the meal plan provides adequate plant-based protein and carbohydrates for sustained energy needs"
+  },
+  {
+    "prompt_inputs": {
+      "height": "160cm",
+      "weight": "90kg",
+      "goal": "muscle gain",
+      "restrictions": "gluten intolerance, lactose intolerance"
+    },
+    "solution_criteria": [
+      "Provides 2800-3200 calories appropriate for muscle gain",
+      "Includes alternative protein sources avoiding gluten and lactose",
+      "Contains no gluten-containing grains or lactose-containing dairy products"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Test with a shorter strength athlete (160cm, 90kg) focused on muscle gain with gluten and lactose intolerance to assess if the plan delivers sufficient calories and alternative protein sources while avoiding restricted foods"
+  },
+  {
+    "prompt_inputs": {
+      "height": "170cm",
+      "weight": "65kg",
+      "goal": "weight loss",
+      "restrictions": "none"
+    },
+    "solution_criteria": [
+      "Total daily calories between 1800-2000 to create moderate deficit",
+      "Includes pre and post-workout nutrition timing",
+      "Protein intake of 1.6-2.2g per kg body weight (104-143g total)",
+      "All meals and snacks clearly specified with portions"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Test with an average-sized athlete (170cm, 65kg) aiming for weight loss with no dietary restrictions to verify the meal plan balances caloric deficit with nutritional needs and maintains energy for training"
+  }
+]

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><title>Prompt Evaluation Report</title>
+<style>
+body{font-family:Arial,sans-serif;padding:20px;color:#333}
+.stats{display:flex;gap:10px;margin-bottom:20px}
+.stat{background:#fff;border-radius:5px;padding:15px;box-shadow:0 2px 5px rgba(0,0,0,.1);flex:1}
+.stat-val{font-size:24px;font-weight:bold;margin-top:5px}
+table{width:100%;border-collapse:collapse;margin-top:20px}
+th{background:#4a4a4a;color:white;text-align:left;padding:12px}
+td{padding:10px;border-bottom:1px solid #ddd;vertical-align:top;width:20%}
+tr:nth-child(even){background:#f9f9f9}
+.output pre{background:#f5f5f5;border:1px solid #ddd;border-radius:4px;padding:10px;font-size:14px;white-space:pre-wrap;word-wrap:break-word}
+.score{font-weight:bold;padding:5px 10px;border-radius:3px}
+.score-high{background:#c8e6c9;color:#2e7d32}
+.score-medium{background:#fff9c4;color:#f57f17}
+.score-low{background:#ffcdd2;color:#c62828}
+</style></head><body>
+<h1>Prompt Evaluation Report</h1>
+<div class="stats">
+<div class="stat"><div>Total Test Cases</div><div class="stat-val">3</div></div>
+<div class="stat"><div>Average Score</div><div class="stat-val">7.7 / 10</div></div>
+<div class="stat"><div>Pass Rate (≥7)</div><div class="stat-val">100.0%</div></div>
+</div>
+<table><thead><tr><th>Scenario</th><th>Prompt Inputs</th><th>Solution Criteria</th><th>Output</th><th>Score</th><th>Reasoning</th></tr></thead>
+<tbody><tr>
+            <td>Test with a tall endurance athlete (185cm, 75kg) training for marathon with vegan dietary restrictions to evaluate if the meal plan provides adequate plant-based protein and carbohydrates for sustained energy needs</td>
+            <td><strong>height:</strong> 185cm<br><strong>weight:</strong> 75kg<br><strong>goal:</strong> marathon training<br><strong>restrictions:</strong> vegan</td>
+            <td>• Provides at least 80-100g plant-based protein from varied sources<br>• Includes 6-8g carbohydrates per kg body weight for endurance training<br>• Contains pre and post-workout meal timing recommendations</td>
+            <td class="output"><pre>Here is a one-day meal plan for a vegan marathon runner:
+
+**Calorie Target:** Approximately 2800 calories
+**Macronutrient Breakdown:** Protein (140g), Fat (85g), Carbs (420g)
+
+**Meal Plan:**
+
+**Breakfast (6:30 AM):** Oatmeal (80g dry weight) with banana (120g), ground flaxseed (15g), and almond butter (25g). Fortified soy milk (240g).
+* Protein: 22g, Fat: 20g, Carbs: 85g
+
+**Mid-Morning Snack (9:30 AM):** Smoothie with spinach (50g), mango (150g), hemp seeds (20g), and coconut water (300g).
+* Protein: 8g, Fat: 12g, Carbs: 35g
+
+**Pre-Run Fuel (11:30 AM):** Dates (40g) with a small amount of water.
+* Protein: 1g, Fat: 0g, Carbs: 30g
+
+**Post-Run Recovery (1:30 PM):** Chocolate soy milk (300g) with a banana (120g).
+* Protein: 15g, Fat: 8g, Carbs: 50g
+
+**Lunch (2:30 PM):** Quinoa bowl (90g dry quinoa) with black beans (150g cooked), avocado (80g), cherry tomatoes (100g), and tahini dressing (20g).
+* Protein: 25g, Fat: 22g, Carbs: 75g
+
+**Afternoon Snack (5:00 PM):** Whole grain toast (60g) with hummus (40g) and cucumber slices (50g).
+* Protein: 12g, Fat: 8g, Carbs: 35g
+
+**Dinner (7:30 PM):** Lentil and vegetable curry (200g cooked lentils, 150g mixed vegetables) with brown rice (80g dry weight) and coconut milk (100g).
+* Protein: 35g, Fat: 12g, Carbs: 85g
+
+**Evening Snack (9:30 PM):** Mixed nuts and seeds (30g) with dried fruit (25g).
+* Protein: 8g, Fat: 15g, Carbs: 20g
+
+This plan provides sustained energy for marathon training while meeting vegan requirements and ensuring adequate protein intake from plant-based sources like legumes, quinoa, nuts, and seeds.</pre></td>
+            <td><span class="score score-medium">7</span></td>
+            <td>The solution meets all mandatory requirements and provides a well-structured vegan meal plan with appropriate timing and varied protein sources. However, it falls short on the carbohydrate requirement (5.6g/kg vs 6-8g/kg needed) and has some mathematical inconsistencies in the macronutrient calculations. The plan is practical and addresses most nutritional needs for a vegan marathon runner, but the carbohydrate shortfall is a significant issue for endurance performance.</td>
+        </tr><tr>
+            <td>Test with a shorter strength athlete (160cm, 90kg) focused on muscle gain with gluten and lactose intolerance to assess if the plan delivers sufficient calories and alternative protein sources while avoiding restricted foods</td>
+            <td><strong>height:</strong> 160cm<br><strong>weight:</strong> 90kg<br><strong>goal:</strong> muscle gain<br><strong>restrictions:</strong> gluten intolerance, lactose intolerance</td>
+            <td>• Provides 2800-3200 calories appropriate for muscle gain<br>• Includes alternative protein sources avoiding gluten and lactose<br>• Contains no gluten-containing grains or lactose-containing dairy products</td>
+            <td class="output"><pre>Here is a one-day meal plan for an athlete aiming for muscle gain with gluten and lactose intolerance:
+
+**Calorie Target:** Approximately 2800 calories
+**Macronutrient Breakdown:** Protein (170g), Fat (100g), Carbs (320g)
+
+**Meal Plan:**
+
+**Breakfast (7:00 AM):** Gluten-free oats (80g dry weight) with sliced banana (120g), blueberries (80g), and almond butter (25g). Unsweetened almond milk (240g).
+* Protein: 18g, Fat: 22g, Carbs: 85g
+
+**Mid-Morning Snack (10:00 AM):** Protein smoothie with plant-based protein powder (30g), coconut milk (200g), mango chunks (100g), and spinach (30g).
+* Protein: 25g, Fat: 15g, Carbs: 28g
+
+**Lunch (1:00 PM):** Grilled chicken breast (150g) with quinoa (80g dry weight), roasted sweet potato (150g), and sautéed vegetables - bell peppers and zucchini (150g) cooked in olive oil (15g).
+* Protein: 50g, Fat: 20g, Carbs: 75g
+
+**Pre-Workout Snack (3:30 PM):** Rice cakes (25g) with cashew butter (20g) and sliced strawberries (80g).
+* Protein: 8g, Fat: 16g, Carbs: 35g
+
+**Post-Workout (6:00 PM):** Chocolate plant-based protein shake (35g protein powder) with coconut water (300g) and half a banana (60g).
+* Protein: 30g, Fat: 3g, Carbs: 25g
+
+**Dinner (8:00 PM):** Baked salmon (160g) with brown rice (70g dry weight) and steamed broccoli (200g) drizzled with olive oil (10g). Mixed green salad (100g) with avocado (60g).
+* Protein: 45g, Fat: 25g, Carbs: 65g
+
+**Evening Snack (10:00 PM):** Mixed nuts - almonds and walnuts (30g) with an orange (120g).
+* Protein: 8g, Fat: 18g, Carbs: 20g
+
+This meal plan provides adequate calories and protein for muscle gain while avoiding gluten and lactose-containing foods. The timing supports training performance with pre and post-workout nutrition.</pre></td>
+            <td><span class="score score-high">8</span></td>
+            <td>This solution successfully meets all mandatory requirements and criteria. It provides a complete meal plan with proper caloric and macronutrient targets, avoids all restricted ingredients, and includes appropriate protein sources for muscle gain. The meal timing is well-structured around training. While the caloric target could be higher within the acceptable range and some minor nutritional calculations could be more precise, these are relatively minor issues that don't significantly detract from the overall quality and practicality of the plan.</td>
+        </tr><tr>
+            <td>Test with an average-sized athlete (170cm, 65kg) aiming for weight loss with no dietary restrictions to verify the meal plan balances caloric deficit with nutritional needs and maintains energy for training</td>
+            <td><strong>height:</strong> 170cm<br><strong>weight:</strong> 65kg<br><strong>goal:</strong> weight loss<br><strong>restrictions:</strong> none</td>
+            <td>• Total daily calories between 1800-2000 to create moderate deficit<br>• Includes pre and post-workout nutrition timing<br>• Protein intake of 1.6-2.2g per kg body weight (104-143g total)<br>• All meals and snacks clearly specified with portions</td>
+            <td class="output"><pre>Here is a one-day meal plan for an athlete aiming for weight loss:
+
+**Calorie Target:** Approximately 1,800 calories
+**Macronutrient Breakdown:** Protein (135g), Fat (60g), Carbs (180g)
+
+**Meal Plan:**
+
+**Breakfast (7:00 AM):** Scrambled eggs (2 whole eggs + 2 egg whites, 120g total) with spinach (50g) and whole grain toast (30g). Greek yogurt (150g, low-fat).
+* Protein: 35g, Fat: 12g, Carbs: 25g
+
+**Mid-Morning Snack (10:00 AM):** Protein shake with whey protein powder (30g) and water (300ml), plus a small orange (130g).
+* Protein: 25g, Fat: 1g, Carbs: 20g
+
+**Lunch (1:00 PM):** Grilled chicken breast (100g) with mixed vegetables (broccoli 100g, bell peppers 80g, carrots 50g) and brown rice (60g cooked weight).
+* Protein: 35g, Fat: 8g, Carbs: 45g
+
+**Pre-Workout Snack (3:30 PM):** Banana (100g) with natural peanut butter (15g).
+* Protein: 5g, Fat: 8g, Carbs: 25g
+
+**Post-Workout Snack (6:00 PM):** Cottage cheese (150g, low-fat) with cucumber slices (80g).
+* Protein: 20g, Fat: 3g, Carbs: 8g
+
+**Dinner (7:30 PM):** Baked white fish (cod or tilapia, 120g) with roasted sweet potato (150g) and steamed green beans (150g). Small mixed salad (100g) with olive oil (10g).
+* Protein: 30g, Fat: 15g, Carbs: 35g
+
+**Evening Snack (9:30 PM):** Casein protein powder (25g) mixed with unsweetened almond milk (200ml).
+* Protein: 25g, Fat: 3g, Carbs: 3g
+
+This plan emphasizes lean proteins to preserve muscle mass during weight loss, includes plenty of vegetables for nutrients and satiety, and times protein intake around workouts for optimal recovery.</pre></td>
+            <td><span class="score score-high">8</span></td>
+            <td>This solution successfully meets all mandatory requirements and criteria. It provides a well-structured meal plan with appropriate caloric deficit, optimal protein intake for an athlete, and strategic nutrient timing around workouts. The plan is practical and detailed enough to follow. However, there's a mathematical discrepancy between stated calories and calculated macronutrients, and the caloric target may be slightly too low for sustained athletic performance. Despite these minor issues, the overall quality is high and the plan would be effective for the stated goals.</td>
+        </tr></tbody></table></body></html>
