@@ -1,14 +1,17 @@
 [
   {
-    "task": "Create a regex pattern to validate AWS S3 bucket names (3-63 characters, lowercase letters, numbers, dots, and hyphens only, cannot start/end with dot or hyphen)",
-    "format": "regex"
+    "task": "Create a boto3 function to list all EC2 instances in a specific region and return only their instance IDs and current states",
+    "format": "python",
+    "solution_criteria": "Function should use boto3 EC2 client, accept region as parameter, handle pagination if needed, and return a list of dictionaries with 'InstanceId' and 'State' keys"
   },
   {
-    "task": "Write a Python function that takes an AWS ARN string and returns the service name (e.g., 's3' from 'arn:aws:s3:::my-bucket')",
-    "format": "python"
+    "task": "Create an IAM policy document that grants read-only access to a specific S3 bucket named 'company-logs' and all objects within it",
+    "format": "json",
+    "solution_criteria": "JSON should be a valid IAM policy with Version, Statement containing Effect 'Allow', appropriate S3 actions for read-only access (GetObject, ListBucket), and Resource ARNs for the specific bucket and its contents"
   },
   {
-    "task": "Create a JSON policy document that allows read-only access to a specific S3 bucket named 'my-company-data'",
-    "format": "json"
+    "task": "Write a regex pattern to validate AWS S3 bucket names according to AWS naming rules",
+    "format": "regex",
+    "solution_criteria": "Regex should match bucket names that are 3-63 characters long, contain only lowercase letters, numbers, dots, and hyphens, start and end with letter or number, and not have consecutive dots or dot-dash combinations"
   }
 ]
