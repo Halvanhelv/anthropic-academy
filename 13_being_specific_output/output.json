@@ -1,0 +1,73 @@
+[
+  {
+    "output": "# One-Day Meal Plan for Cutting Athlete\n\n**Athlete Profile:** 210cm, 120kg, cutting for competition\n**Dietary Restrictions:** Vegan, gluten-free, nut-free\n\n## Daily Targets\n- **Total Calories:** 2,400 kcal\n- **Protein:** 180g (30%)\n- **Carbohydrates:** 240g (40%) \n- **Fat:** 80g (30%)\n\n---\n\n## **MEAL 1 - Breakfast (7:00 AM)**\n**Pre-workout fuel**\n\n- Gluten-free oats: 80g\n- Vegan protein powder (pea/rice blend): 30g\n- Banana: 120g (1 medium)\n- Ground flaxseed: 15g\n- Unsweetened almond milk: 250ml\n\n**Macros:** 565 kcal | 28g protein | 78g carbs | 16g fat\n\n---\n\n## **MEAL 2 - Post-Workout (10:30 AM)**\n**Recovery snack**\n\n- Rice cakes (plain): 20g (2 cakes)\n- Hummus: 40g\n- Blueberries: 100g\n\n**Macros:** 225 kcal | 7g protein | 42g carbs | 4g fat\n\n---\n\n## **MEAL 3 - Lunch (1:00 PM)**\n**Main meal**\n\n- Quinoa (cooked): 150g\n- Black beans (cooked): 100g\n- Sweet potato (roasted): 200g\n- Spinach (fresh): 50g\n- Tahini dressing: 15g\n- Nutritional yeast: 10g\n\n**Macros:** 635 kcal | 26g protein | 98g carbs | 16g fat\n\n---\n\n## **MEAL 4 - Afternoon Snack (4:00 PM)**\n**Energy boost**\n\n- Rice protein powder: 25g\n- Coconut milk (canned, light): 100ml\n- Frozen mango: 100g\n- Chia seeds: 10g\n\n**Macros:** 285 kcal | 22g protein | 25g carbs | 10g fat\n\n---\n\n## **MEAL 5 - Dinner (7:00 PM)**\n**Evening meal**\n\n- Lentils (red, cooked): 120g\n- Brown rice (cooked): 100g\n- Broccoli (steamed): 150g\n- Avocado: 50g\n- Hemp seeds: 15g\n- Olive oil: 8g\n\n**Macros:** 540 kcal | 24g protein | 68g carbs | 20g fat\n\n---\n\n## **MEAL 6 - Evening Snack (9:30 PM)**\n**Light finish**\n\n- Coconut yogurt (unsweetened): 100g\n- Pumpkin seeds: 20g\n- Strawberries: 100g\n\n**Macros:** 250 kcal | 8g protein | 15g carbs | 18g fat\n\n---\n\n## **Daily Totals:**\n- **Calories:** 2,500 kcal\n- **Protein:** 115g (18.4%)\n- **Carbohydrates:** 326g (52.2%)\n- **Fat:** 84g (30.2%)\n\n## **Hydration Schedule:**\n- Upon waking: 500ml water\n- Pre-workout: 250ml water\n- During workout: 500ml water\n- Throughout day: 2-3L total water\n- Herbal tea allowed between meals\n\n## **Budget-Friendly Tips:**\n- Buy dried beans/lentils in bulk\n- Purchase frozen fruits and vegetables\n- Generic gluten-free oats\n- Buy quinoa and rice in large quantities\n- Seasonal produce when possible\n\n**Note:** This plan provides adequate protein for muscle preservation during cutting while maintaining energy for training. Adjust portions by \u00b110% based on weekly weigh-ins and performance.",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "210cm",
+        "weight": "120kg",
+        "goal": "cutting weight for competition",
+        "restrictions": "vegan, gluten-free, nut allergy"
+      },
+      "solution_criteria": [
+        "Provides caloric deficit appropriate for weight cutting while maintaining protein intake of 1.6-2.2g per kg body weight",
+        "All meals are vegan, gluten-free, and contain no nuts or nut-derived ingredients",
+        "Includes specific portion sizes and timing for all meals and snacks",
+        "Maintains adequate micronutrient density despite dietary restrictions"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+      "scenario": {
+        "test_idea": "Edge Case Athlete Profile",
+        "description": "Test with an extremely tall athlete (210cm, 120kg) who has the goal of 'cutting weight for competition' with multiple restrictions like 'vegan, gluten-free, nut allergy'. This tests the prompt's ability to handle complex constraints while maintaining nutritional adequacy."
+      }
+    },
+    "score": 4,
+    "reasoning": "While this meal plan meets the basic mandatory formatting requirements, it has critical nutritional flaws that make it unsuitable for a cutting athlete. The protein intake is less than half of what's needed for muscle preservation during weight loss. The inclusion of almond milk violates the nut allergy restriction. The mathematical errors between targets and totals show poor attention to detail. These are not minor issues but fundamental problems that could compromise the athlete's health and performance goals."
+  },
+  {
+    "output": "# One-Day Athlete Meal Plan\n\n**Athlete Profile:** 165cm, 55kg, Maintenance Goal\n**Daily Targets:** 2,400 calories | 120g protein | 80g fat | 360g carbohydrates\n\n---\n\n## **6:30 AM - Pre-Workout Snack**\n- Banana: 100g\n- Honey: 15g\n\n*Calories: 149 | Protein: 1g | Fat: 0g | Carbs: 38g*\n\n---\n\n## **8:00 AM - Post-Workout Breakfast**\n- Oatmeal (dry): 80g\n- Whole milk: 200ml\n- Greek yogurt (0% fat): 150g\n- Blueberries: 100g\n- Almonds: 20g\n\n*Calories: 658 | Protein: 32g | Fat: 18g | Carbs: 82g*\n\n---\n\n## **12:30 PM - Lunch**\n- Chicken breast (grilled): 120g\n- Brown rice (cooked): 150g\n- Broccoli (steamed): 100g\n- Olive oil: 10ml\n- Avocado: 50g\n\n*Calories: 687 | Protein: 38g | Fat: 22g | Carbs: 65g*\n\n---\n\n## **3:30 PM - Afternoon Snack**\n- Whole grain bread: 60g (2 slices)\n- Peanut butter: 25g\n- Apple: 150g\n\n*Calories: 428 | Protein: 13g | Fat: 17g | Carbs: 58g*\n\n---\n\n## **7:00 PM - Dinner**\n- Salmon fillet: 100g\n- Sweet potato (baked): 200g\n- Green beans: 100g\n- Olive oil: 10ml\n\n*Calories: 478 | Protein: 25g | Fat: 18g | Carbs: 52g*\n\n---\n\n## **Daily Totals**\n- **Calories:** 2,400\n- **Protein:** 109g (18%)\n- **Fat:** 75g (28%)\n- **Carbohydrates:** 295g (54%)\n\n## **Hydration**\n- Water: 2.5-3 liters throughout the day\n- Additional 500ml during/after workout\n\n## **Timing Notes**\n- Pre-workout snack 30-60 minutes before training\n- Post-workout breakfast within 30 minutes after training\n- Space main meals 3-4 hours apart\n- Include snack if more than 5 hours between meals\n\nThis plan provides balanced nutrition for maintenance while supporting athletic performance and recovery.",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "165cm",
+        "weight": "55kg",
+        "goal": "maintenance",
+        "restrictions": "none"
+      },
+      "solution_criteria": [
+        "Provides appropriate caloric intake for maintenance (1800-2200 calories)",
+        "Includes all three main meals with specific food items and portions",
+        "Maintains balanced macronutrient distribution (45-65% carbs, 10-35% protein, 20-35% fat)"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+      "scenario": {
+        "test_idea": "Minimalist Input Challenge",
+        "description": "Test with a compact athlete profile (165cm, 55kg) with goal 'maintenance' and restrictions listed as 'none'. This evaluates whether the prompt can generate a well-structured meal plan when given minimal constraints and moderate caloric needs."
+      }
+    },
+    "score": 4,
+    "reasoning": "While this meal plan demonstrates excellent structure, organization, and attention to detail in meeting most mandatory requirements, it contains a critical violation of the primary criterion. The 2,400-calorie intake substantially exceeds the specified maintenance range of 1,800-2,200 calories for this athlete profile. For a 55kg, 165cm athlete, 2,400 calories is more appropriate for weight gain rather than maintenance. Additionally, there are discrepancies between the stated targets and actual totals for all macronutrients. Despite the high quality of meal planning, food selection, and formatting, the fundamental caloric miscalculation represents a significant failure to meet the core requirement."
+  },
+  {
+    "output": "# One-Day Meal Plan for Muscle Gain/Bulking\n\n**Athlete Profile:** 180cm, 95kg, Lactose Intolerant, No Red Meat\n**Target Calories:** 3,200 calories\n**Macronutrient Goals:** 180g protein | 125g fat | 380g carbohydrates\n\n---\n\n## **MEAL 1 - BREAKFAST (7:00 AM)**\n- Oatmeal: 80g dry oats\n- Banana: 120g (1 medium)\n- Peanut butter: 25g (2 tablespoons)\n- Egg whites: 150g (about 5 whites)\n- Whole egg: 50g (1 large egg)\n\n**Calories:** 650 | **Protein:** 30g | **Carbs:** 75g | **Fat:** 18g\n\n---\n\n## **MEAL 2 - MID-MORNING SNACK (10:00 AM)**\n- Greek yogurt (lactose-free): 200g\n- Almonds: 30g (about 22 nuts)\n- Honey: 20g (1 tablespoon)\n\n**Calories:** 450 | **Protein:** 25g | **Carbs:** 25g | **Fat:** 25g\n\n---\n\n## **MEAL 3 - LUNCH (1:00 PM)**\n- Chicken breast (grilled): 150g\n- Brown rice (cooked): 200g\n- Broccoli: 150g\n- Olive oil: 15ml (1 tablespoon)\n- Sweet potato: 150g\n\n**Calories:** 750 | **Protein:** 45g | **Carbs:** 85g | **Fat:** 15g\n\n---\n\n## **MEAL 4 - PRE-WORKOUT (4:00 PM)**\n- Lactose-free protein powder: 30g (1 scoop)\n- Banana: 100g (1 small)\n- Rice cakes: 20g (2 cakes)\n\n**Calories:** 300 | **Protein:** 25g | **Carbs:** 45g | **Fat:** 2g\n\n---\n\n## **MEAL 5 - POST-WORKOUT (6:30 PM)**\n- Lactose-free protein powder: 30g (1 scoop)\n- White rice (cooked): 150g\n- Coconut water: 250ml\n\n**Calories:** 350 | **Protein:** 25g | **Carbs:** 55g | **Fat:** 2g\n\n---\n\n## **MEAL 6 - DINNER (8:00 PM)**\n- Salmon fillet: 150g\n- Quinoa (cooked): 150g\n- Green beans: 100g\n- Avocado: 100g (\u00bd medium)\n- Olive oil: 10ml\n\n**Calories:** 700 | **Protein:** 40g | **Carbs:** 45g | **Fat:** 35g\n\n---\n\n## **DAILY TOTALS**\n- **Total Calories:** 3,200\n- **Total Protein:** 190g (24%)\n- **Total Carbohydrates:** 330g (41%)\n- **Total Fat:** 97g (27%)\n- **Fiber:** ~35g\n\n---\n\n## **HYDRATION**\n- Water: 3-4 liters throughout the day\n- Coconut water: 250ml (included in post-workout)\n\n## **BUDGET-FRIENDLY SUBSTITUTIONS**\n- Replace salmon with canned tuna or chicken thigh\n- Use frozen vegetables instead of fresh\n- Buy oats, rice, and quinoa in bulk\n- Choose seasonal fruits for better prices\n\n**Estimated Daily Cost:** $12-15 USD",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "180cm",
+        "weight": "95kg",
+        "goal": "muscle gain/bulking",
+        "restrictions": "lactose intolerant, no red meat"
+      },
+      "solution_criteria": [
+        "Provides high-calorie meals (3000+ calories total)",
+        "Includes high-protein alternatives without dairy or red meat",
+        "Respects both dietary restrictions throughout all meals",
+        "Delivers a complete single-day meal plan format"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+      "scenario": {
+        "test_idea": "Bulking Powerlifter Scenario",
+        "description": "Test with a heavy athlete (180cm, 95kg) whose goal is 'muscle gain/bulking' with restrictions 'lactose intolerant, no red meat'. This assesses the prompt's ability to create high-calorie, protein-rich meals while working around common dietary limitations."
+      }
+    },
+    "score": 8,
+    "reasoning": "This solution excellently meets all mandatory requirements and core criteria. It provides a complete, well-formatted meal plan with exact portions, timing, and comprehensive nutritional information. The plan successfully navigates both dietary restrictions while delivering appropriate calories and protein for muscle gain. The minor mathematical discrepancy in carbohydrate totals and slightly conservative carb intake prevent a perfect score, but these are relatively minor issues in an otherwise strong solution."
+  }
+]

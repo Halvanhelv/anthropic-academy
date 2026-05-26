@@ -1,0 +1,58 @@
+[
+  {
+    "prompt_inputs": {
+      "height": "210cm",
+      "weight": "120kg",
+      "goal": "cutting weight for competition",
+      "restrictions": "vegan, gluten-free, nut allergy"
+    },
+    "solution_criteria": [
+      "Provides caloric deficit appropriate for weight cutting while maintaining protein intake of 1.6-2.2g per kg body weight",
+      "All meals are vegan, gluten-free, and contain no nuts or nut-derived ingredients",
+      "Includes specific portion sizes and timing for all meals and snacks",
+      "Maintains adequate micronutrient density despite dietary restrictions"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": {
+      "test_idea": "Edge Case Athlete Profile",
+      "description": "Test with an extremely tall athlete (210cm, 120kg) who has the goal of 'cutting weight for competition' with multiple restrictions like 'vegan, gluten-free, nut allergy'. This tests the prompt's ability to handle complex constraints while maintaining nutritional adequacy."
+    }
+  },
+  {
+    "prompt_inputs": {
+      "height": "165cm",
+      "weight": "55kg",
+      "goal": "maintenance",
+      "restrictions": "none"
+    },
+    "solution_criteria": [
+      "Provides appropriate caloric intake for maintenance (1800-2200 calories)",
+      "Includes all three main meals with specific food items and portions",
+      "Maintains balanced macronutrient distribution (45-65% carbs, 10-35% protein, 20-35% fat)"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": {
+      "test_idea": "Minimalist Input Challenge",
+      "description": "Test with a compact athlete profile (165cm, 55kg) with goal 'maintenance' and restrictions listed as 'none'. This evaluates whether the prompt can generate a well-structured meal plan when given minimal constraints and moderate caloric needs."
+    }
+  },
+  {
+    "prompt_inputs": {
+      "height": "180cm",
+      "weight": "95kg",
+      "goal": "muscle gain/bulking",
+      "restrictions": "lactose intolerant, no red meat"
+    },
+    "solution_criteria": [
+      "Provides high-calorie meals (3000+ calories total)",
+      "Includes high-protein alternatives without dairy or red meat",
+      "Respects both dietary restrictions throughout all meals",
+      "Delivers a complete single-day meal plan format"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": {
+      "test_idea": "Bulking Powerlifter Scenario",
+      "description": "Test with a heavy athlete (180cm, 95kg) whose goal is 'muscle gain/bulking' with restrictions 'lactose intolerant, no red meat'. This assesses the prompt's ability to create high-calorie, protein-rich meals while working around common dietary limitations."
+    }
+  }
+]
