@@ -2,6 +2,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 import json
+import ast
+import re
 from statistics import mean
 from anthropic import Anthropic
 
@@ -41,10 +43,13 @@ Example output:
 [
   {
     "task": "Description of task",
+    "format": "python"
   },
   ...additional
 ]
 ```
+
+* The "format" field should be one of: "python", "json", or "regex"
 
 * Focus on tasks that can be solved by writing a single Python function, a single JSON object, or a single regex
 * Focus on tasks that do not require writing much code
@@ -71,10 +76,49 @@ def run_prompt(test_case):
 Please solve the following task:
 
 {test_case["task"]}
+
+* Respond only with Python, JSON, or a plain Regex
+* Do not add any comments or commentary or explanation
 """
     messages = []
     add_user_message(messages, prompt)
-    return chat(messages)
+    add_assistant_message(messages, "```code")
+    return chat(messages, stop_sequences=["```"])
+
+
+def validate_json(text):
+    try:
+        json.loads(text.strip())
+        return 10
+    except json.JSONDecodeError:
+        return 0
+
+
+def validate_python(text):
+    try:
+        ast.parse(text.strip())
+        return 10
+    except SyntaxError:
+        return 0
+
+
+def validate_regex(text):
+    try:
+        re.compile(text.strip())
+        return 10
+    except re.error:
+        return 0
+
+
+def grade_syntax(output, test_case):
+    fmt = test_case.get("format", "").lower()
+    if fmt == "json":
+        return validate_json(output)
+    elif fmt == "python":
+        return validate_python(output)
+    elif fmt == "regex":
+        return validate_regex(output)
+    return 0
 
 
 def grade_by_model(test_case, output):
@@ -100,10 +144,15 @@ Provide your evaluation as a structured JSON object with:
 def run_test_case(test_case):
     output = run_prompt(test_case)
     model_grade = grade_by_model(test_case, output)
+    model_score = model_grade["score"]
+    syntax_score = grade_syntax(output, test_case)
+    score = (model_score + syntax_score) / 2
     return {
         "output": output,
         "test_case": test_case,
-        "score": model_grade["score"],
+        "score": score,
+        "model_score": model_score,
+        "syntax_score": syntax_score,
         "reasoning": model_grade["reasoning"],
     }
 
@@ -124,5 +173,6 @@ with open("dataset.json", "r") as f:
 results = run_eval(dataset)
 for r in results:
     print(f"\nTask: {r['test_case']['task'][:60]}...")
-    print(f"Score: {r['score']}")
+    print(f"Format: {r['test_case'].get('format', 'unknown')}")
+    print(f"Model score: {r['model_score']} | Syntax score: {r['syntax_score']} | Combined: {r['score']}")
     print(f"Reasoning: {r['reasoning']}")

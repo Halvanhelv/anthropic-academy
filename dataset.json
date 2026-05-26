@@ -1,11 +1,14 @@
 [
   {
-    "task": "Write a Python function that takes an S3 bucket ARN as input and returns just the bucket name (e.g., 'arn:aws:s3:::my-bucket-name' should return 'my-bucket-name')"
+    "task": "Create a regex pattern to validate AWS S3 bucket names (3-63 characters, lowercase letters, numbers, dots, and hyphens only, cannot start/end with dot or hyphen)",
+    "format": "regex"
   },
   {
-    "task": "Create a JSON object for an AWS IAM policy that allows read-only access to a specific S3 bucket named 'company-logs' and all objects within it"
+    "task": "Write a Python function that takes an AWS ARN string and returns the service name (e.g., 's3' from 'arn:aws:s3:::my-bucket')",
+    "format": "python"
   },
   {
-    "task": "Write a regex pattern that validates AWS Lambda function names according to AWS naming rules: 1-64 characters, letters, numbers, hyphens, and underscores only, cannot start or end with hyphen"
+    "task": "Create a JSON policy document that allows read-only access to a specific S3 bucket named 'my-company-data'",
+    "format": "json"
   }
 ]
