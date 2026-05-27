@@ -38,6 +38,7 @@ Each lesson has both `.py` (run standalone) and `.ipynb` (interactive in VS Code
 | 21 | `multi_turn_tools` | Tool use — multi-turn conversation loop |
 | 22 | `implementing_multiple_turns` | Tool use — run_tools + error handling |
 | 23 | `using_multiple_tools` | Tool use — 3 tools + set_reminder |
+| 24 | `fine_grained_tool_calling` | Tool use — streaming + fine-grained |
 
 ## Conventions
 
