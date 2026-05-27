@@ -26,6 +26,12 @@ Each lesson has both `.py` (run standalone) and `.ipynb` (interactive in VS Code
 | 09 | `structured_data_exercise` | Prefill progression — clean commands |
 | 10 | `prompt_evals` | Eval pipeline with model-based grading |
 | 11 | `prompt_engineering` | Prompt engineering baseline (meal plan) |
+| 12 | `being_clear_and_direct` | Clear and direct prompts (~5.0) |
+| 13 | `being_specific` | Specific guidelines (~5.3) |
+| 14 | `xml_tags` | Structure with XML tags (~5.7) |
+| 15 | `providing_examples` | One-shot prompting (~7.7) |
+| 16 | `exercise_prompting` | All prompt techniques combined (~8.2) |
+| 17 | `tool_functions` | Tool use — writing tool functions |
 
 ## Conventions
 
