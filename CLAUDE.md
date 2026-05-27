@@ -36,6 +36,7 @@ Each lesson has both `.py` (run standalone) and `.ipynb` (interactive in VS Code
 | 19 | `handling_message_blocks` | Tool use — multi-block responses |
 | 20 | `sending_tool_results` | Tool use — full cycle with tool_result |
 | 21 | `multi_turn_tools` | Tool use — multi-turn conversation loop |
+| 22 | `implementing_multiple_turns` | Tool use — run_tools + error handling |
 
 ## Conventions
 
