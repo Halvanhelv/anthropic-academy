@@ -33,6 +33,7 @@ Each lesson has both `.py` (run standalone) and `.ipynb` (interactive in VS Code
 | 16 | `exercise_prompting` | All prompt techniques combined (~8.2) |
 | 17 | `tool_functions` | Tool use — writing tool functions |
 | 18 | `tool_schemas` | Tool use — JSON schemas for tools |
+| 19 | `handling_message_blocks` | Tool use — multi-block responses |
 
 ## Conventions
 
