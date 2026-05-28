@@ -41,6 +41,7 @@ Each lesson has both `.py` (run standalone) and `.ipynb` (interactive in VS Code
 | 24 | `fine_grained_tool_calling` | Tool use — streaming + fine-grained |
 | 25 | `text_editor_tool` | Tool use — built-in text editor tool |
 | 26 | `web_search_tool` | Tool use — built-in web search tool |
+| 27 | `text_chunking` | RAG — text chunking strategies |
 
 ## Conventions
 
