@@ -44,6 +44,7 @@ Each lesson has both `.py` (run standalone) and `.ipynb` (interactive in VS Code
 | 27 | `text_chunking` | RAG — text chunking strategies |
 | 28 | `text_embeddings` | RAG — text embeddings (VoyageAI) |
 | 29 | `implementing_rag` | RAG — full pipeline with VectorIndex |
+| 30 | `bm25_search` | RAG — BM25 lexical search |
 
 ## Conventions
 
