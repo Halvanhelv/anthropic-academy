@@ -51,6 +51,7 @@ Each lesson has both `.py` (run standalone) and `.ipynb` (interactive in VS Code
 | 34 | `pdf_support` | PDF support (document analysis) |
 | 35 | `citations` | Citations (PDF pages + text char positions) |
 | 36 | `prompt_caching` | Prompt caching (cache_control breakpoints) |
+| 37 | `code_execution` | Code execution + Files API |
 
 ## Conventions
 
