@@ -49,6 +49,7 @@ Each lesson has both `.py` (run standalone) and `.ipynb` (interactive in VS Code
 | 32 | `extended_thinking` | Extended thinking (reasoning blocks) |
 | 33 | `image_support` | Image support (base64, vision analysis) |
 | 34 | `pdf_support` | PDF support (document analysis) |
+| 35 | `citations` | Citations (PDF pages + text char positions) |
 
 ## Conventions
 
