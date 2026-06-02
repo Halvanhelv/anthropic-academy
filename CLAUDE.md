@@ -50,6 +50,7 @@ Each lesson has both `.py` (run standalone) and `.ipynb` (interactive in VS Code
 | 33 | `image_support` | Image support (base64, vision analysis) |
 | 34 | `pdf_support` | PDF support (document analysis) |
 | 35 | `citations` | Citations (PDF pages + text char positions) |
+| 36 | `prompt_caching` | Prompt caching (cache_control breakpoints) |
 
 ## Conventions
 
