@@ -46,6 +46,7 @@ Each lesson has both `.py` (run standalone) and `.ipynb` (interactive in VS Code
 | 29 | `implementing_rag` | RAG — full pipeline with VectorIndex |
 | 30 | `bm25_search` | RAG — BM25 lexical search |
 | 31 | `hybrid_rag` | RAG — multi-index pipeline with RRF |
+| 32 | `extended_thinking` | Extended thinking (reasoning blocks) |
 
 ## Conventions
 
