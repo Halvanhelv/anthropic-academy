@@ -1,6 +1,8 @@
 # Anthropic Academy — Building with the Claude API
 
-Working through the [Anthropic Academy](https://academy.anthropic.com/) course "Building with the Claude API". Each lesson is a standalone .py file with a working example.
+Working through the [Anthropic Academy](https://academy.anthropic.com/) courses:
+- "Building with the Claude API" — lessons 01–37
+- "Claude Code in Action" — hooks, MCP, projects
 
 ## Stack
 
@@ -9,9 +11,23 @@ Working through the [Anthropic Academy](https://academy.anthropic.com/) course "
 - `python-dotenv` for loading API key
 - Virtual environment: `.venv/`
 
-## File structure
+## Directory structure
 
-Each lesson has both `.py` (run standalone) and `.ipynb` (interactive in VS Code) versions.
+```
+lessons/
+├── 01_api_basics/          # Lessons 01–09: requests, conversations, streaming, structured data
+├── 02_prompt_engineering/   # Lessons 10–16: evals, prompt techniques, exercises (+output/)
+├── 03_tool_use/            # Lessons 17–26: tool schemas, multi-turn, built-in tools
+└── 04_advanced/            # Lessons 27–37: RAG, thinking, multimodal, caching, code exec (+assets)
+
+projects/
+├── mcp_project/            # MCP server + client (FastMCP)
+└── app_starter/            # App starter (tools/, tests/, hooks/, main.py)
+```
+
+Each lesson has `.py` (run standalone) and `.ipynb` (interactive) versions.
+
+### Module 1 — API Basics (`lessons/01_api_basics/`)
 
 | # | File | Lesson |
 |---|------|--------|
@@ -24,6 +40,11 @@ Each lesson has both `.py` (run standalone) and `.ipynb` (interactive in VS Code
 | 07 | `streaming` | Response streaming |
 | 08 | `structured_data` | Structured data with prefill + stop sequence |
 | 09 | `structured_data_exercise` | Prefill progression — clean commands |
+
+### Module 2 — Prompt Engineering (`lessons/02_prompt_engineering/`)
+
+| # | File | Lesson |
+|---|------|--------|
 | 10 | `prompt_evals` | Eval pipeline with model-based grading |
 | 11 | `prompt_engineering` | Prompt engineering baseline (meal plan) |
 | 12 | `being_clear_and_direct` | Clear and direct prompts (~5.0) |
@@ -31,6 +52,11 @@ Each lesson has both `.py` (run standalone) and `.ipynb` (interactive in VS Code
 | 14 | `xml_tags` | Structure with XML tags (~5.7) |
 | 15 | `providing_examples` | One-shot prompting (~7.7) |
 | 16 | `exercise_prompting` | All prompt techniques combined (~8.2) |
+
+### Module 3 — Tool Use (`lessons/03_tool_use/`)
+
+| # | File | Lesson |
+|---|------|--------|
 | 17 | `tool_functions` | Tool use — writing tool functions |
 | 18 | `tool_schemas` | Tool use — JSON schemas for tools |
 | 19 | `handling_message_blocks` | Tool use — multi-block responses |
@@ -41,6 +67,11 @@ Each lesson has both `.py` (run standalone) and `.ipynb` (interactive in VS Code
 | 24 | `fine_grained_tool_calling` | Tool use — streaming + fine-grained |
 | 25 | `text_editor_tool` | Tool use — built-in text editor tool |
 | 26 | `web_search_tool` | Tool use — built-in web search tool |
+
+### Module 4 — Advanced Features (`lessons/04_advanced/`)
+
+| # | File | Lesson |
+|---|------|--------|
 | 27 | `text_chunking` | RAG — text chunking strategies |
 | 28 | `text_embeddings` | RAG — text embeddings (VoyageAI) |
 | 29 | `implementing_rag` | RAG — full pipeline with VectorIndex |
@@ -57,7 +88,7 @@ Each lesson has both `.py` (run standalone) and `.ipynb` (interactive in VS Code
 
 - Model: `claude-sonnet-4-0`
 - API key in `.env` (do not commit)
-- Each file is self-contained — run with `python3 <file>.py`
+- Run lessons from their module directory: `cd lessons/01_api_basics && python3 01_making_a_request.py`
 
 ## Workflow
 
