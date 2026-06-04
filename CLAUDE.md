@@ -23,7 +23,8 @@ lessons/
 
 projects/
 ├── mcp_project/            # MCP server + client (FastMCP)
-└── app_starter/            # App starter (tools/, tests/, hooks/, main.py)
+├── app_starter/            # App starter (tools/, tests/, hooks/, main.py)
+└── uigen/                  # UI generator (Next.js + Prisma + Claude AI SDK)
 ```
 
 Each lesson has `.py` (run standalone) and `.ipynb` (interactive) versions.
