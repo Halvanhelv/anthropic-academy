@@ -1,58 +1,34 @@
-# Document Tools
+# Anthropic Academy
 
-A Python package implementing a variety of document-related tools for converting and processing document formats. These tools are exposed through an MCP server interface for seamless integration with AI assistants.
+Working through [Anthropic Academy](https://academy.anthropic.com/) courses on the Claude API and Claude Code.
+
+## Structure
+
+```
+lessons/
+├── 01_api_basics/           # Lessons 01–09: requests, conversations, streaming, structured data
+├── 02_prompt_engineering/   # Lessons 10–16: evals, prompt techniques, exercises
+├── 03_tool_use/             # Lessons 17–26: tool schemas, multi-turn, built-in tools
+└── 04_advanced/             # Lessons 27–37: RAG, thinking, multimodal, caching, code execution
+
+projects/
+├── mcp_project/             # MCP server + client (FastMCP)
+└── app_starter/             # App starter — tools, tests, hooks
+```
 
 ## Setup
 
 ```bash
-# Create a virtual env and activate it
-uv venv
+python3 -m venv .venv
 source .venv/bin/activate
-
-# Install the package in development mode
-uv pip install -e .
+pip install -r requirements.txt
 ```
 
-## Running
+## Running lessons
 
 ```bash
-# Start the MCP server
-uv run main.py
+cd lessons/01_api_basics
+python3 01_making_a_request.py
 ```
 
-## Testing
-
-```bash
-# Run all tests
-uv run pytest
-```
-
-## Development
-
-### Tool Definitions
-
-Tools are defined as Python functions and registered with the MCP server:
-
-```python
-mcp.tool()(my_function)
-```
-
-Tool descriptions should:
-
-- Begin with a one-line summary
-- Provide detailed explanation of functionality
-- Explain when to use (and not use) the tool
-- Include usage examples with expected input/output
-
-Use `Field` from pydantic for parameter descriptions:
-
-```python
-from pydantic import Field
-
-def my_tool(
-    param1: str = Field(description="Detailed description of this parameter"),
-    param2: int = Field(description="Explain what this parameter does")
-) -> ReturnType:
-    """Comprehensive docstring here"""
-    # Implementation
-```
+Requires `ANTHROPIC_API_KEY` in `.env` at the project root.
