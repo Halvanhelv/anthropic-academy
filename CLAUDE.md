@@ -6,9 +6,10 @@ Working through the [Anthropic Academy](https://academy.anthropic.com/) courses:
 
 ## Stack
 
-- Python 3.9
+- Python 3.10+
 - `anthropic` SDK
 - `python-dotenv` for loading API key
+- `voyageai` for embeddings (lessons 28–31)
 - Virtual environment: `.venv/`
 
 ## Directory structure
